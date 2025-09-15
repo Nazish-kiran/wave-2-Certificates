@@ -23,9 +23,11 @@
 
       .background-img {
         position: absolute;
-        height: 45rem;
-        top: 15%;
-        left: 10%;
+        height: 30rem;
+        top: 25%;
+        left: 19.5%;
+        z-index: -1;
+        opacity: .4;
       }
 
       .center {
@@ -136,79 +138,17 @@
   <body>
     <div class="container">
       <div class="content">
-        <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img" />
+        <img src="images/coat_of_arms_agriculture_department.svg" alt="" class="background-img" />
         <div class="" style="padding-top: 40px; padding-inline: 60px; padding-bottom: 0px">
           <div class="header">
             <div class="text-main" style="width: 100%">
-              <img src="@[assetImgPath]/images/text-main.png" width="100%" alt="logo" />
+              <img src="images/text-curved.svg" width="100%" alt="logo" />
             </div>
             <div class="logo">
-              <img src="@[assetImgPath]/images/Group 68.png" style="width: 100px" alt="logo" />
-              <h2 style="margin: 0">FORM C</h2>
-              <p style="margin: 0; font-weight: bold">REGISTRATION CERTIFICATE</p>
+            
             </div>
           </div>
-          <div style="margin-top: -170px">
-            <div class="form-container">
-              <div class="form-row">
-                <div class="form-inner-cell">
-                  <div class="form-label">Name of the Shop / Establishment:&nbsp;</div>
-                  <span class="form-line-long">@[Name of Establishment]</span>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-inner-cell">
-                  <div class="form-label">Name of the Employer:&nbsp;</div>
-                  <span class="form-line-long">@[Employer Name]</span>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-inner-cell">
-                  <div class="form-label" style="line-height: 2">
-                    Postal Address of the Shop / Establishment:&nbsp;
-                    <span class="form-line-long" style="width: auto">@[Address]</span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-inner-cell">
-                  <div class="form-label"><strong>Registration No.&nbsp;</strong></div>
-                  <span class="form-line-short" style="width: auto">@[certificateNumber]</span>
-                </div>
-              </div>
-              <div class="form-row">
-                <p style="margin-left: 25px; line-height: 2">
-                  It is hereby certified that the establishment as mentioned herein has been registered as a <span style="border-bottom: 1px solid black; width: auto; display: inline-block">@[Name of Establishment]</span> under the Sindh Shops &
-                  Commercial Establishments Act. 2015 this <strong>@[certificateDate]</strong>
-                </p>
-              </div>
-              <table border="1" style="border-collapse: collapse; width: 100%; margin-top: 5px">
-                <tr>
-                  <th colspan="1" style="width: 2%; text-align: center; padding: 15px 0px">From</th>
-                  <th colspan="1" style="width: 20%; text-align: center; padding: 15px 0px">To</th>
-                  <th colspan="3" style="width: 60%; text-align: center; padding: 15px 20px">Signature of the Deputy Chief Inspector of Shops/ Establishment with Seal</th>
-                </tr>
-                <tr>
-                  <td colspan="1" style="width: 20%; text-align: center; padding: 10px 0px; height: 150px">@[certificateValidityFrom]</td>
-                  <td colspan="1" style="width: 20%; text-align: center; padding: 10px 0px; height: 150px">@[certificateValidityTo]</td>
-                  <td colspan="1" style="width: 60%; text-align: center; padding: 10px 20px; height: 150px">
-                    <img src="@[signatureImgPath]" alt="" class="signature" style="height: 80px" /><br />
-                    @[OfficerAuthorizerName]
-                    <br />
-                    Deputy Chief Inspector of Shops & Establishments Division, Karachi Region, Karachi
-                  </td>
-                </tr>
-              </table>
-              <div class="form-row">
-                <div class="form-inner-cell" style="justify-content: center; margin-top: 20px"></div>
-              </div>
-              <div class="form-row">
-                <div class="form-inner-cell" style="justify-content: end">
-                  <img src="@[qrImagePath]" width="100px" alt="qr-code" />
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
