@@ -7,14 +7,13 @@
         font-family: var(--poppins-semibold);
       }
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-      /* @[assetImgPath] */
       :root {
         --poppins-semibold: "poppins-semibold", sans-serif;
       }
 
       .container {
         position: absolute;
-        background-image: url(images/border.png);
+        background: url(@[assetImgPath]/border.png);
         width: 99%;
         height: 99%;
         min-height: 900px;
@@ -145,7 +144,7 @@
     <div class="container">
       <div class="content">
         <img
-          src="images/coat_of_arms_agriculture_department.svg"
+          src="@[assetImgPath]/coat_of_arms_agriculture_department.svg"
           alt=""
           class="background-img"
         />
@@ -155,7 +154,12 @@
         >
           <div class="header">
             <div class="text-main" style="width: 100%">
-              <img src="images/text-curved.svg" width="100%" alt="logo" style="translate: 0px 15px;"/>
+              <img
+                src="@[assetImgPath]/text-curved.svg"
+                width="100%"
+                alt="logo"
+                style="translate: 0px 15px"
+              />
             </div>
             <div>
               <h2
@@ -171,7 +175,7 @@
                 hyderabad
               </h2>
               <div class="center">
-                <img src="@[qrImagePath]/images/Group 68.png" style="width: 125px" alt="" />
+                <img src="@[assetImgPath]/Group 68.png" style="width: 125px" alt="" />
               </div>
               <div
                 style="
@@ -202,19 +206,7 @@
             </div>
           </div>
           <div class="main">
-            <h2
-              style="
-                font-family: 'Times New Roman', Times, serif;
-                text-transform: uppercase;
-                font-size: 21px;
-                margin-top: 25px;
-              "
-              class="center"
-            >
-             License for dealer <br>
-of fertilizer and fertilizer material
-            </h2>
-            <p>
+            <p style="margin-top: 20px">
               <b>
                 <i style="font-family: 'Times New Roman', Times, serif">
                   No. DPP/F.N.C/ <br />
@@ -222,16 +214,31 @@ of fertilizer and fertilizer material
                 </i>
               </b>
             </p>
-            <p class="center">
+            <h2
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                text-transform: uppercase;
+                font-size: 21px;
+              "
+              class="center"
+            >
+              License for dealer <br />
+              of fertilizer and fertilizer material
+            </h2>
+
+            <p class="center" >
               <b>
-                <i style="font-family: 'Times New Roman', Times, serif">
+                <i style="font-family: 'Times New Roman', Times, serif;font-size: 18px;">
                   Certified that the Person whose particulars are given below
                   has been <br />
-                  registered as Dealer of Agriculture Pesticides <br />
-                  under Rule 11A(5) of 1973
+                  registration as Dealer of fertilizer and fertilizer material
+                  <br />
+                  under The sindh Fertilizer (Control) Act 1994 and Rule 4 (3)
+                  1999
                 </i>
               </b>
             </p>
+
             <div style="margin-top: 30px">
               <div class="">
                 <p>
@@ -263,7 +270,7 @@ of fertilizer and fertilizer material
                     gap: 3px;
                   "
                 >
-                  4. C.N.I.C:
+                  4. C.N.I.C No:
                   <span class="form-line-long" style="width: 81.2%"
                     >&nbsp;</span
                   >
@@ -275,27 +282,17 @@ of fertilizer and fertilizer material
               </div>
               <div class="">
                 <p>
-                  5. No & date of certificate obtained for applying
-                  pesticides:<span class="form-line-long" style="width: 40.7%"
-                    >&nbsp;</span
-                  >
-                </p>
-              </div>
-              <div class="">
-                <p>
-                  6. Date:<span class="form-line-long" style="width: 41%"
-                    >&nbsp;</span
-                  >
-                </p>
-              </div>
-              <div class="">
-                <p>
-                  7. Date of Renewal:<span
+                  5. Date of Renewal:<span
                     class="form-line-long"
                     style="width: 29%"
                     >&nbsp;</span
                   >
                 </p>
+              </div>
+               <div style="margin-top: 40px;" >
+                <h4 style="text-transform: uppercase;font-size: 18px;translate: -100px 0px;" class="center">
+                 Licensing Authority
+                </h4>
               </div>
             </div>
 
@@ -304,13 +301,15 @@ of fertilizer and fertilizer material
                 display: flex;
                 justify-content: space-between;
                 margin-top: 50px;
+                position: relative;
               "
             >
               <img
-                src="images/image1.png"
+                src="@[qrImgPath]"
                 style="width: 83px; height: 83px"
                 alt=""
               />
+                <p style="font-weight: 800;position: absolute;left: 40%;bottom: 0px;">SEAL</p>
               <h3 class="center" style="text-transform: uppercase">
                 Director general <br />
                 agriculture extension sindh <br />
