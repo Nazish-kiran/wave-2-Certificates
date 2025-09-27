@@ -4,14 +4,8 @@
     <meta charset="utf-8" />
     <style>
       * {
-        font-family: var(--poppins-semibold);
+        font-family: "Times New Roman", Times, serif;
       }
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-      /* @[assetImgPath] */
-      :root {
-        --poppins-semibold: "poppins-semibold", sans-serif;
-      }
-
       .container {
         position: absolute;
         background-image: url(logos/border.png);
@@ -23,11 +17,10 @@
 
       .background-img {
         position: absolute;
-        height: 30rem;
-        top: 40%;
-        left: 18%;
+        height: 28rem;
+        top: 30%;
+        left: 24.4%;
         z-index: -1;
-        opacity: 0.4;
       }
 
       .center {
@@ -70,18 +63,6 @@
       .logo {
         transform: translateY(-135%);
       }
-
-      .header > h1 {
-        margin: 0px;
-        font-size: 30px;
-        color: #277443;
-        text-transform: uppercase;
-      }
-
-      .subtitle {
-        color: #277443;
-      }
-
       .form-inner-cell {
         width: 100%;
         display: flex;
@@ -92,12 +73,14 @@
         border-bottom: 1px solid black;
         width: 150px;
         display: inline-block;
+        translate: 0px -5px;
       }
 
       .form-line-middle {
         border-bottom: 1px solid black;
-        width: 300px;
+        width: 250px;
         display: inline-block;
+        translate: 0px -5px;
       }
 
       .form-line-long {
@@ -105,32 +88,22 @@
         border-bottom: 1px solid black;
         width: 90%;
         display: inline-block;
+        translate: 0px -5px;
       }
-
-      .form-label {
-        width: max-content;
+      th,
+      td {
+        font-weight: 400;
+        height: 30px;
+        font-size: 13px;
+        width: calc(100% / 7);
       }
-
-      .form-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
+      th {
+        padding-inline: 0px !important;
+        font-size: 12px;
       }
-
-      .form-row2 {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-        gap: 20px;
-      }
-
-      .row {
-        border: 1px solid black;
-        padding: 7px 5px;
-        display: flex;
-        align-items: flex-end;
-        gap: 10px;
+      .container2 p,
+      .container2 span {
+        font-size: 16.5px !important;
       }
 
       @page {
@@ -145,7 +118,7 @@
     <div class="container">
       <div class="content">
         <img
-          src="logos/coat_of_arms_agriculture_department.svg"
+          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
           alt=""
           class="background-img"
         />
@@ -155,181 +128,496 @@
         >
           <div class="header">
             <div class="text-main" style="width: 100%">
-              <img src="logos/text-curved.svg" width="100%" alt="logo" style="translate: 0px 15px;"/>
+              <img
+                src="logos/Dept_text_logo-5.png"
+                width="99%"
+                alt="logo"
+                style="translate: 0px 15px"
+              />
             </div>
             <div>
-              <h2
-                class="center"
-                style="
-                  text-transform: uppercase;
-                  margin-block: 0px;
-                  font-size: 26px;
-                  translate: 0px -15px;
-                "
-              >
-                Government of sindh <br />
-                hyderabad
-              </h2>
               <div class="center">
-                <img src="logos/Group 68.png" style="width: 125px" alt="" />
-              </div>
-              <div
-                style="
-                  position: absolute;
-                  width: 130px;
-                  height: 145px;
-                  border: 1px solid black;
-                  right: 10px;
-                  bottom: -20px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
                 <img
-                  src=""
-                  alt="Photograph of 
-                  Qualified Person"
-                  style="
-                    font-size: 14px;
-                    font-family: 'Times New Roman', Times, serif;
-                    text-align: center;
-                    object-fit: cover;
-                    width: 100%;
-                  "
+                  src="logos/Group 68.png"
+                  style="width: 105px; position: absolute; top: 20%; left: 43%"
+                  alt=""
                 />
               </div>
             </div>
+            <h1
+              class="center"
+              style="
+                text-transform: uppercase;
+                font-size: 44px;
+                margin-top: 160px;
+              "
+            >
+              Permit <br />
+              for <br />
+              Wiremen <br />
+              Karachi
+            </h1>
           </div>
           <div class="main">
-            <h2
-              style="
-                font-family: 'Times New Roman', Times, serif;
-                text-transform: uppercase;
-                font-size: 21px;
-                margin-top: 25px;
-              "
-              class="center"
-            >
-              Certificate of registration <br />
-              for dealer of agriculture pesticides
-            </h2>
-            <p>
-              <b>
-                <i style="font-family: 'Times New Roman', Times, serif">
-                  No. DPP/F.N.C/ <br />
-                  Dated:
-                </i>
-              </b>
-            </p>
-            <p class="center">
-              <b>
-                <i style="font-family: 'Times New Roman', Times, serif">
-                  Certified that the Person whose particulars are given below
-                  has been <br />
-                  registered as Dealer of Agriculture Pesticides <br />
-                  under Rule 11A(5) of 1973
-                </i>
-              </b>
-            </p>
-            <div style="margin-top: 30px">
-              <div class="">
-                <p>
-                  1. Name:
-                  <span class="form-line-long" style="width: 90%">&nbsp;</span>
-                </p>
-              </div>
-              <div class="">
-                <p>
-                  2. Father's Name:
-                  <span class="form-line-long" style="width: 81.2%"
-                    >&nbsp;</span
-                  >
-                </p>
-              </div>
-              <div class="">
-                <p>
-                  3. Address:
-                  <span class="form-line-long" style="width: 87.91%"></span>
-                </p>
-                <span class="form-line-long" style="width: 100%"></span>
-              </div>
-              <div class="">
-                <p
-                  style="
-                    display: flex;
-                    width: 100%;
-                    align-items: center;
-                    gap: 3px;
-                  "
-                >
-                  4. C.N.I.C:
-                  <span class="form-line-long" style="width: 81.2%"
-                    >&nbsp;</span
-                  >
-                  Cell #:
-                  <span class="form-line-long" style="width: 81.6%"
-                    >&nbsp;</span
-                  >
-                </p>
-              </div>
-              <div class="">
-                <p>
-                  5. No & date of certificate obtained for applying
-                  pesticides:<span class="form-line-long" style="width: 40.7%"
-                    >&nbsp;</span
-                  >
-                </p>
-              </div>
-              <div class="">
-                <p>
-                  6. Date:<span class="form-line-long" style="width: 41%"
-                    >&nbsp;</span
-                  >
-                </p>
-              </div>
-              <div class="">
-                <p>
-                  7. Date of Renewal:<span
-                    class="form-line-long"
-                    style="width: 29%"
-                    >&nbsp;</span
-                  >
-                </p>
-              </div>
-            </div>
-
             <div
               style="
                 display: flex;
-                justify-content: space-between;
-                margin-top: 50px;
-                position: relative;
+                justify-content: flex-end;
+                margin-top: 290px;
               "
             >
               <img
                 src="logos/image 1.png"
-                style="width: 83px; height: 83px"
+                style="width: 83px; height: 75px"
                 alt=""
               />
-              <p style="font-weight: 800;position: absolute;left: 40%;bottom: 0px;">SEAL</p>
-              <h3 class="center" style="text-transform: uppercase">
-                Director general <br />
-                agriculture extension sindh <br />
-                hyderabad
-              </h3>
             </div>
-
-            <div
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container container2" style="top: 100vh">
+      <div class="content">
+        <img
+          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 20px; padding-inline: 35px; padding-bottom: 0px"
+        >
+          <div class="top-content">
+            <h1
+              class="center"
               style="
-                position: absolute;
-                top: 63%;
-                text-indent: 88px;
-                line-height: 35px;
+                font-size: 28px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
               "
             >
-              <p></p>
-            </div>
+              Permit for Electric Supervisors
+            </h1>
+          </div>
+          <p style="text-align: justify; margin-bottom: 25px">
+            (Authorized by Government Notification No. P.W.D. No. 46-M.1, dated
+            26th October, 1937)
+          </p>
+          <p style="text-align: justify; margin-bottom: 5px">
+            Date of issue<span class="form-line-middle">&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 5px; margin-top: 0px">
+            Name<span class="form-line-middle">&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 5px; margin-top: 0px">
+            Date of Examination<span class="form-line-middle">&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 5px; margin-top: 0px">
+            Place of Examination<span class="form-line-middle">&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 30px; margin-top: 0px">
+            Competency Certificate No<span class="form-line-middle"
+              >&nbsp;</span
+            >
+          </p>
+          <p style="text-align: justify; margin-bottom: 30px">
+            SGP.Kar L(iii)179-2000Bks - 95-05(AM/E-i) (Office)
+          </p>
+          <p
+            style="
+              text-align: justify;
+              text-indent: 40px;
+              line-height: 24px;
+              margin-bottom: 0px;
+            "
+          >
+            This permit allows the holder to supervise and carry out electric
+            installation work subject to conditions mentioned in the rules
+            framed under Rules 48 of the Electricity Rules, 1937, but does not
+            allow him to undertaking electrical contracting work unless he holds
+            Contractor’s Licence.
+          </p>
+          <div style="padding-inline: 100px">
+            <p
+              style="
+                text-align: justify;
+                margin-bottom: 5px;
+                margin-top: 5px;
+                line-height: 24px;
+              "
+            >
+              The validity of Permit is shown on page 4 and 5. <br />
+              This permit is to be carried on the holder’s persons. <br />
+              This permit consist of 14 pages.
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              margin-bottom: 10px;
+            "
+          >
+            <p class="center" style="margin-top: 10px">
+              Secretary <br />
+              Licensing Board, <br />
+              Electric inspector, <br />
+              Karachi Region, Karachi.
+            </p>
+            <p class="center" style="margin-top: 10px">
+              President <br />
+              Licensing Board, <br />
+              Karachi Region, Karachi,
+            </p>
+          </div>
+          <table
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              border: 1px solid #000;
+            "
+          >
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px">Date</th>
+              <th style="border: 1px solid #000; padding: 6px">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Signature of <br />
+                Renewing authority
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Name of the firm
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Date of Appointment
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Date of Discharge
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">Initial</th>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+          </table>
+
+          <div style="display: flex; justify-content: flex-end">
+            <img
+              src="logos/image 1.png"
+              width="75px"
+              alt=""
+              style="margin-top: 25px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container container2" style="top: 200vh">
+      <div class="content">
+        <img
+          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 20px; padding-inline: 35px; padding-bottom: 0px"
+        >
+          <div class="top-content">
+            <h1
+              class="center"
+              style="
+                font-size: 28px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+              "
+            >
+              Permit for wiremen
+            </h1>
+          </div>
+          <table
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              border: 1px solid #000;
+            "
+          >
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px">Date</th>
+              <th style="border: 1px solid #000; padding: 6px">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Signature of <br />
+                Renewing authority
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Name of the firm
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Date of Appointment
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">
+                Date of Discharge
+              </th>
+              <th style="border: 1px solid #000; padding: 6px">Initial</th>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+             <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+             <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+          </table>
+
+          <div style="display: flex; justify-content: flex-end">
+            <img
+              src="logos/image 1.png"
+              width="75px"
+              alt=""
+              style="margin-top: 25px"
+            />
           </div>
         </div>
       </div>
