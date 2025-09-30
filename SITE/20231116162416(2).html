@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      /* @[assetImgPath]/ */
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+      }
+      .background-img {
+        position: absolute;
+        height: 28rem;
+        top: 30%;
+        left: 23%;
+        z-index: -1;
+      }
+      .center {
+        text-align: center;
+      }
+      .long-line {
+        display: inline-block;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: 200px;
+        padding-left: 5px;
+        word-wrap: break-word;
+        margin-bottom: 10px;
+        translate: 0px -5px;
+      }
+
+      .short-line {
+        display: inline-block;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: 100px;
+        padding-left: 5px;
+        word-wrap: break-word;
+        translate: 0px -5px;
+      }
+      .head-info span {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 9.5px;
+      }
+      .head-info {
+        margin-bottom: 10px;
+      }
+      .head-info div {
+        line-height: 12.8px;
+      }
+      p,
+      span,
+      li {
+        font-size: 13px;
+      }
+
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 30px; padding-inline: 35px; padding-bottom: 0px"
+        >
+          <div
+            class="top-content"
+            style="padding-inline: 20px; padding-top: 150px; position: relative;"
+          >
+            <div style="padding-top: 10px; width: 100%;">
+              <p style="margin: 0px">
+                <span style="font-weight: 700"> M/s. </span>
+                <br />
+                R/o
+                <span
+                  class="short-line"
+                  style="translate: 0px -5px; width: 150px"
+                  >&nbsp;</span
+                >
+                <br />
+                <span style="text-decoration: underline"> Karachi. </span>
+              </p>
+            </div>
+            <div style="margin: 0px 10px;">
+              <div
+                style="
+                  display: flex;
+                  gap: 31px;
+                  align-items: flex-start;
+                  margin-top: 15px;
+                "
+              >
+                <p style="font-weight: 600">SUBJECT:-</p>
+                <p
+                  style="
+                    text-decoration: underline;
+                    font-weight: 600;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                  "
+                >
+                  SUBLETTING OF PLOT NO. Ref: Your letter dated:
+                </p>
+              </div>
+
+              <div style="display: flex; gap: 42px; align-items: flex-start">
+                <p style="font-style: italic; margin-bottom: 0px">Reference:</p>
+                <p
+                  style="
+                    margin-bottom: 0px;
+                    text-decoration: underline;
+                    font-style: italic;
+                  "
+                >
+                  Your letter dated: Nil.
+                </p>
+              </div>
+              <!-- <div style="display: flex; gap: 110px; align-items: flex-start">
+                <p style="font-style: italic; margin-bottom: 0px"></p>
+                <p style="margin-top: 37px; margin-bottom: 0px">
+                  Since you have paid our usual amalgamation fee of Rs:
+                  <span class="short-line">&nbsp;</span>/- we hereby give our
+                </p>
+              </div> -->
+              <p
+                style="
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                  text-align: justify;
+                  margin-top: 40px;
+                "
+              >
+                With reference to your above letter you are advised to submit Tenancy Agreement, duly executed and also pay subletting fee @ Rs<span
+                  class="short-line"
+                  style="width: 200px"
+                  >&nbsp;</span> 
+                  /- per Sft., so that further action in the matter may be taken accordingly.
+
+              </p>
+            </div>
+          </div>
+          <p
+            style="
+              font-weight: 700;
+              font-size: 15px;
+              margin-top: 50px;
+              text-align: right;
+              translate: -100px 0px;
+              margin-bottom: 5px;
+              text-transform: uppercase;
+            "
+          >
+            Director Administration
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              margin-top: 80px;
+            "
+          >
+            <p style="margin-bottom: 0px;margin-top: 0px;">
+              Copy to:- <br />
+              <span
+                style="display: inline-block; margin-left: 5px; margin-top: 7px"
+              >
+                1. The Director Finance, SITE Limited Karachi.<br />
+                2. The Estate Engineer (D/F) SITE Limited Karachi.<br />
+                3. The Office Superintendent, Engineering Section, SITE Limited Karachi.<br />
+              </span>
+            </p>
+          </div>
+          <div style="position: absolute; bottom: 30px; right: 30px;">
+            <img src="@[qrImgPath]" width="80px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

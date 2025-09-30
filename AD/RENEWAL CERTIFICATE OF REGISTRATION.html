@@ -86,13 +86,13 @@
       }
 
       .form-line-short {
-        border-bottom: 1px solid black;
+        border-bottom: 1px dashed black;
         width: 150px;
         display: inline-block;
       }
 
       .form-line-middle {
-        border-bottom: 1px dotted black;
+        border-bottom: 1px dashed black;
         width: 300px;
         display: inline-block;
         translate: 0px -6px;
@@ -100,7 +100,7 @@
 
       .form-line-long {
         flex: 1;
-        border-bottom: 1px solid black;
+        border-bottom: 1px dashed black;
         width: 90%;
         display: inline-block;
       }
@@ -145,25 +145,36 @@
                 alt=""
               />
             </div>
-            <div style="position: absolute">
+            <div style="position: absolute;translate: 0px 25px;">
               <p style="font-size: 26px; color: #375522" class="center">
                 GOVERNMENT OF SINDH, <br />
-                HYDERABAD
+                <span
+                  class="form-line-middle"
+                  style="font-size: 26px; color: #375522"
+                  class="center"
+                  >&nbsp;</span
+                >
               </p>
             </div>
           </div>
           <div class="main">
             <p
               class="center"
-              style="font-size: 24px; font-weight: 700; margin-bottom: 30px"
+              style="font-size: 24px; font-weight: 700; margin-bottom: 30px;margin-top: 55px;"
             >
               RENEWAL CERTIFICATE OF REGISTRATION
             </p>
             <div style="display: flex; justify-content: space-between">
               <p style="margin-top: 20px; font-weight: 600; color: #c00404">
-                Re:No.DGAES (400-F) /
-                <span style="display: inline-block; margin-left: 30px">
-                  -N
+                Re:No.
+                <span class="form-line-middle"
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 600;
+                    width: 350px;
+                    color: #c00404;
+                  ">
+                  &nbsp;
                 </span>
               </p>
               <p
@@ -188,21 +199,30 @@
               </p>
             </div>
 
-            <div style="margin-inline: 30px;margin-top: 30px;">
-              <p style="line-height: 28px;text-align: justify;">
+            <div style="margin-inline: 30px; margin-top: 30px">
+              <p style="line-height: 28px; text-align: justify">
                 Certified that the Registration of M/S.
-                <span class="form-line-middle" style="width: 360px">&nbsp;</span>
+                <span class="form-line-middle" style="width: 360px"
+                  >&nbsp;</span
+                >
                 Address
-                <span class="form-line-middle" style="width: 500px">&nbsp;</span>, as
-                Pesticides Distributor in the Province of Sindh is hereby
+                <span class="form-line-middle" style="width: 500px">&nbsp;</span
+                >, as Pesticides Distributor in the Province of Sindh is hereby
                 renewed for the period <br />
-                from <span class="form-line-middle" style="width: 150px"> &nbsp;</span> to <span class="form-line-middle" style="width: 150px"> &nbsp;</span> .
-                The Company is however required to comply with the terms and
+                from
+                <span class="form-line-middle" style="width: 150px">
+                  &nbsp;</span
+                >
+                to
+                <span class="form-line-middle" style="width: 150px">
+                  &nbsp;</span
+                >
+                . The Company is however required to comply with the terms and
                 conditions stated overleaf and laid down by the Agriculture
                 Department from time to time.
               </p>
             </div>
-            <div style="margin-top: 170px">
+            <div style="margin-top: 210px">
               <p
                 style="
                   font-weight: 800;
@@ -233,7 +253,9 @@
                 >
                   Director general <br />
                   agriculture extension sindh <br />
-                  hyderabad
+                   <span class="form-line-middle" style="width: 185px"
+                  >&nbsp;</span
+                >
                 </h3>
                 <img
                   src="logos/image 1.png"
