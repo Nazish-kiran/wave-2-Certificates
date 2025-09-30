@@ -9,7 +9,7 @@
       /* @[assetImgPath] */
       .container {
         position: absolute;
-        background-image: url(logos/border.png);
+        background-image: url(@[assetImgPath]/border.png);
         width: 99%;
         height: 99%;
         min-height: 900px;
@@ -95,22 +95,17 @@
       td {
         font-weight: 400;
         height: 29.3px;
-        font-size: 13px;
-        width: calc(100% / 7);
+        font-size: 19px;
       }
       .container3 th,
       .container3 td {
-        height: 29.3px;
-      }
-      th {
-        padding-inline: 0px !important;
-        font-size: 12px;
+        height: 72px;
       }
       .container2 p,
       .container2 span,
       .container3 p,
       .container3 span {
-        font-size: 27px !important;
+        font-size: 28px !important;
       }
 
       @page {
@@ -126,7 +121,7 @@
       
       <div class="content">
         <img
-          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province.svg 1.png"
           alt=""
           class="background-img"
         />
@@ -137,7 +132,7 @@
           <div class="header">
             <div class="text-main" style="width: 100%">
               <img
-                src="logos/Dept_text_logo-5.png"
+                src="@[assetImgPath]/Dept_text_logo-5.png"
                 width="99%"
                 alt="logo"
                 style="translate: 0px 15px"
@@ -146,7 +141,7 @@
             <div>
               <div class="center">
                 <img
-                  src="logos/Group 68.png"
+                  src="@[assetImgPath]/Group 68.png"
                   style="width: 105px; position: absolute; top: 20%; left: 43%"
                   alt=""
                 />
@@ -172,12 +167,13 @@
     <div class="blank_container" style="height: 100vh;top: 100vh;">
   
       </div>
-    <div class="container container2" style="top: 200vh; background-image: url(logos/passport\ border\ left.png);">
+    <div class="container container2" style="top: 200vh; background-image: url(@[assetImgPath]/passport\ border\ left.png);">
       <div class="content">
         <img
-          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province_left.svg 1.png"
           alt=""
           class="background-img"
+          style="height: 49rem;right: 0px;left: auto;top: 15%;"
         />
         <div
           class=""
@@ -201,10 +197,10 @@
             (Authorized by Govt. Notification number SOPP-5/6-73. Dated 1st January, 1982 issued by the Irrigation and Power Department, Government of Sindh, Karachi).
           </p>
           <p style="text-align: justify; margin-bottom: 10px">
-            Date of issue<span class="form-line-middle" style="width: 330px;">&nbsp;</span>
+            Date of issue<span class="form-line-middle" style="width: 340px;">&nbsp;</span>
           </p>
           <p style="text-align: justify; margin-bottom: 10px; margin-top: 0px">
-            Name<span class="form-line-middle" style="width: 400px;">&nbsp;</span>
+            Name<span class="form-line-middle" style="width: 420px;">&nbsp;</span>
           </p>
           <p style="text-align: justify; margin-bottom: 10px; margin-top: 0px">
             Date of Examination<span class="form-line-middle">&nbsp;</span>
@@ -215,80 +211,26 @@
           <p style="text-align: justify; margin-bottom: 30px;margin-top: 120px;">
             SGP.Kar L(iii)179-2000Bks - 95-05(AM/E-i) (Office)
           </p>
-          <!-- <p
-            style="
-              text-align: justify;
-              text-indent: 45px;
-              line-height: 24px;
-              margin-bottom: 0px;
-            "
-          >
-            (1) This permit allows the holder to carry out wiring work only
-            subjcet to the conditions mentioned in the rules framed under
-            Rules-48 of the Electricity Rules, 1937, but does not allow him to
-            undertaking supervising or electrical contracting work.
-          </p> -->
-          <!-- <div style="padding-inline: 100px">
-            <p
-              style="
-                text-align: justify;
-                margin-bottom: 5px;
-                margin-top: 5px;
-                line-height: 24px;
-              "
-            >
-              (2) The validity of the Permit is shown on pages 4 and 5.<br />
-              
-              (3) This permit is to be carried on the holders persons.
-            </p>
-          </div> -->
-          <!-- <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-start;
-              margin-bottom: 10px;
-              padding-right: 50px;
-            "
-          >
-            <p class="center" style="margin-top: 10px">
-              Secretary <br />
-              Licensing Board, <br />
-
-              Karachi Region.
-            </p>
-            <p class="center" style="margin-top: 10px">
-              President <br />
-              Licensing Board, <br />
-              Karachi Region, Karachi,
-            </p>
-          </div> -->
-          <!-- <div style="display: flex; justify-content: flex-end">
-            <img
-              src="@[qrImgPath]"
-              width="75px"
-              alt=""
-              style="margin-top: 25px"
-            />
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
-     <div class="container container2" style="top: 300vh; background-image: url(logos/passport\ border\ right.png);">
+     <div class="container container2" style="top: 300vh; background-image: url(@[assetImgPath]/passport\ border\ right.png);">
       <div class="content">
         <img
-          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province_right.svg 1.png"
           alt=""
           class="background-img"
+          style="height: 49rem;left: 0px;top: 15%;"
         />
         <div
           class=""
-          style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px"
+          style="padding-top: 20px; padding-right: 60px;padding-left: 50px; padding-bottom: 0px"
         >
           <p
             style="
               text-align: justify;
-              line-height: 35px;
+              line-height: 45px;
               margin-bottom: 0px;
               text-align: center;
               margin-top: 150px;
@@ -297,15 +239,17 @@
             (1) This permit allows the holder to carry out wiring work only
             subjcet to the conditions mentioned in the rules framed under
             Rules-48 of the Electricity Rules, 1937, but does not allow him to
-            undertaking supervising or electrical contracting work.
+            undertaking supervising or electrical <span style="translate: 20px 0px;display: inline-block;">
+ contracting work.
+            </span>
           </p>
-          <div style="padding-inline: 100px">
+          <div style="padding-left: 100px;padding-right: 28px;">
             <p
               style="
                 text-align: justify;
                 margin-bottom: 5px;
                 margin-top: 5px;
-                line-height: 35px;
+                line-height: 45px;
               text-align: center;
 
               "
@@ -321,8 +265,8 @@
               justify-content: space-between;
               align-items: flex-start;
               margin-bottom: 10px;
-              padding-right: 50px;
-              margin-top: 40px;
+              padding-right: 10px;
+              margin-top: 110px;
             "
           >
             <p class="center" style="margin-top: 10px;line-height: 32px;">
@@ -334,13 +278,204 @@
             <p class="center" style="margin-top: 10px;line-height: 32px;">
               President <br />
               Licensing Board, <br />
-              Karachi Region, Karachi,
+              Karachi Region,
             </p>
           </div> 
-         <div style="display: flex; justify-content: flex-end">
+        </div>
+      </div>
+    </div>
+     <div class="container container3" style="top: 400vh;background-image: url(@[assetImgPath]/passport\ border\ left.png);" >
+      <div class="content">
+        <img
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province_left.svg 1.png"
+          alt=""
+          class="background-img"
+            style="height: 49rem;right: 0px;left: auto;top: 15%;"
+        />
+        <div
+          class=""
+          style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px"
+        >
+          <table
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              border: 1px solid #000;
+              margin-top: 50px;
+            "
+          >
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Date</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">
+                Signature of <br />
+                Renewing authority
+              </th>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             
+            </tr>
+           
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container container3" style="top: 500vh;background-image: url(@[assetImgPath]/passport\ border\ right.png);" >
+       <div class="content">
+        <img
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province_right.svg 1.png"
+          alt=""
+          class="background-img"
+             style="height: 49rem;left: 0px;top: 15%;"
+        />
+        <div
+          class=""
+          style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px"
+        >
+          <table
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              border: 1px solid #000;
+              margin-top: 50px;
+            "
+          >
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Name of the firm</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Date of <br> Appointment</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+               Date of Discharge
+              </th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+               Initial
+              </th>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+             
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             
+            </tr>
+           
+          </table>
+
+          <div style="display: flex; justify-content: flex-end">
             <img
               src="@[qrImgPath]"
-              width="75px"
+              width="110px"
               alt=""
               style="margin-top: 25px"
             />
@@ -348,247 +483,6 @@
         </div>
       </div>
     </div>
-    <div class="container container3" style="top: 400vh;background-image: url(logos/passport\ border\ right.png);" >
-      <div class="content">
-        <img
-          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
-          alt=""
-          class="background-img"
-        />
-        <div
-          class=""
-          style="padding-top: 20px; padding-inline: 35px; padding-bottom: 0px"
-        >
-          <div class="top-content">
-            <h1
-              class="center"
-              style="
-                font-size: 28px;
-                text-transform: uppercase;
-                margin-bottom: 10px;
-              "
-            >
-              Permit for wiremen
-            </h1>
-          </div>
-          <table
-            style="
-              border-collapse: collapse;
-              width: 100%;
-              border: 1px solid #000;
-            "
-          >
-            <tr>
-              <th style="border: 1px solid #000; padding: 6px">Date</th>
-              <th style="border: 1px solid #000; padding: 6px">Valid up to</th>
-              <th style="border: 1px solid #000; padding: 6px">
-                Signature of <br />
-                Renewing authority
-              </th>
-              <th style="border: 1px solid #000; padding: 6px">
-                Name of the firm
-              </th>
-              <th style="border: 1px solid #000; padding: 6px">
-                Date of Appointment
-              </th>
-              <th style="border: 1px solid #000; padding: 6px">
-                Date of Discharge
-              </th>
-              <th style="border: 1px solid #000; padding: 6px">Initial</th>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-            <tr>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-              <td style="border: 1px solid #000; padding: 6px"></td>
-            </tr>
-          </table>
-
-          <div style="display: flex; justify-content: flex-end">
-            <img
-              src="logos/image 1.png"
-              width="75px"
-              alt=""
-              style="margin-top: 20px"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+   
   </body>
 </html>
