@@ -11,10 +11,9 @@
       :root {
         --poppins-semibold: "poppins-semibold", sans-serif;
       }
-      /* @[assetImgPath]/ */
       .container {
         position: absolute;
-        background-image: url(logos/border.png);
+        background-image: url(@[assetImgPath]/border.png);
         width: 99%;
         height: 99%;
         min-height: 900px;
@@ -61,6 +60,10 @@
       .head-info div {
         line-height: 12.8px;
       }
+      .top-content p{
+        line-height: 20px;
+        text-align: justify;
+      }
       p,
       span,
       li {
@@ -78,7 +81,7 @@
     <div class="container">
       <div class="content">
         <img
-          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province.svg 1.png"
           alt=""
           class="background-img"
         />
@@ -88,7 +91,7 @@
         >
           <div class="top-content">
             <div style="display: flex; align-items: center; gap: 10px">
-              <img src="logos/SESSI logo.png" width="100px" alt="" />
+              <img src="@[assetImgPath]/SESSI logo.png" width="100px" alt="" />
               <h1
                 class="center"
                 style="
@@ -109,7 +112,7 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 50px;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
               "
             >
               <p style="margin: 0">NO: SS.</p>
@@ -123,7 +126,7 @@
                 M/s.
                 <span
                   class="short-line"
-                  style="translate: 0px -5px; width: 210px"
+                  style="translate: 0px -5px; width: 198px"
                   >&nbsp;</span
                 >
                 <br />
@@ -142,13 +145,13 @@
             <div style="display: flex; gap: 60px">
               <p style="margin-bottom: 0px; margin-top: 0px"></p>
               <p
-                style="margin-bottom: 0px; margin-top: 0px; text-align: justify"
+                style="margin-bottom: 0px; margin-top: 0px;"
               >
                 Consequent upon issuance of Notification u/s-1(3) of the Sindh
                 Employees' Social
               </p>
             </div>
-            <p style="margin-bottom: 0px; margin-top: 0px; text-align: justify">
+            <p style="margin-bottom: 0px; margin-top: 0px;">
               Security Act 2016, your establishment stands covered under Social
               Security Scheme w.e.f.<span class="long-line" style="width: 150px;"> &nbsp;</span>or
               from the date of starting business, whichever is later, vide
@@ -163,13 +166,13 @@
             <div style="display: flex; gap: 60px">
               <p style="margin-bottom: 0px; margin-top: 0px"></p>
               <p
-                style="margin-bottom: 0px; margin-top: 0px; text-align: justify"
+                style="margin-bottom: 0px; margin-top: 0px;"
               >
                 From the date of notification, you have became liable to pay to
                 the Institution every month
               </p>
             </div>
-            <p style="margin-bottom: 0px; margin-top: 0px; text-align: justify">
+            <p style="margin-bottom: 0px; margin-top: 0px;">
               Social Security contribution @ 6% of minimum wages in respect of
               every employee whether employed directly or through any other
               person (contractor). Please note that you are required to submit
@@ -186,14 +189,14 @@
             <div style="display: flex; gap: 60px">
               <p style="margin-bottom: 0px; margin-top: 0px"></p>
               <p
-                style="margin-bottom: 0px; margin-top: 0px; text-align: justify"
+                style="margin-bottom: 0px; margin-top: 0px;"
               >
                 Necessary details of the Social Security Scheme can be obtained
-                from the concerned
+                from the concerned Social
               </p>
             </div>
             <p style="margin-bottom: 0px; margin-top: 0px">
-              Social Security Officer and in case of any difficulty, you can
+             Security Officer and in case of any difficulty, you can
               contact the undersigned during working hours.
             </p>
             <div style="display: flex; gap: 60px">
@@ -208,26 +211,30 @@
                 font-weight: 600;
                 font-size: 18px;
                 translate: -150px 0px;
+                margin-bottom: 0px;
+                margin-top: 60px;
               "
             >
               DIRECTOR
             </p>
-            <p style="font-weight: 600;margin-bottom: 0px;text-decoration: underline;">Declaration by the Employer:</p>
+            <p style="font-weight: 600;margin-bottom: 0px;text-decoration: underline;margin-top: 0px;">Declaration by the Employer:</p>
             <p style="margin-top: 0px;">
-              "L <span class="short-line">&nbsp;</span> undertakes that the data
+              "I, <span class="short-line">&nbsp;</span> undertakes that the data
               provided by me is correct to the best of my knowledge and I agree
               to abide by SESSI Rules & Regulations under the SESS Act 2016.”
             </p>
-             <p style="font-weight: 600;margin-bottom: 0px;">copy to</p>
-            <p style="margin-top: 0px;">
+             <p style="font-weight: 600;margin-bottom: 0px;">Copy to:</p>
+            <p style="margin-top: 0px;margin-bottom: 0px;">
               Area Officer concerned - with direction to recover Social Security contribution from the above unit according to rules.
             </p>
+            <div style="position: absolute;width: 230px;top: 19.6%;">
+              <p style="text-indent: 30px;">Lorem, ipsum dolor sit amet b b b b b  consectetur adipisicing elit. Nostrum, enim molestias.</p>
+            </div>
           </div>
           <div
             style="
               display: flex;
               justify-content: space-between;
-              margin-top: 95px;
               align-items: flex-end;
             "
           >
@@ -235,7 +242,7 @@
               <span style="font-weight: 600">NOTE:</span> This is a system
               generated certificate therefore needs no signature
             </p>
-            <img src="logos/image 1.png" width="80px" alt="" />
+            <img src="@[qrImgPath] " width="79px" alt="" />
           </div>
         </div>
       </div>
