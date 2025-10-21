@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    * {
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    /* @[assetImgPath] */
+    .container {
+      position: absolute;
+      background-image: url(@[assetImgPath]/images/border-land.png);
+      width: 99%;
+      height: 99%;
+      min-height: 690px;
+      background-size: 100%;
+    }
+    .content{
+      position: relative;
+    }
+    .background-img {
+      position: absolute;
+      height: 28rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .form-container {
+      width: 100%;
+      margin: auto;
+    }
+
+    p,
+    span,
+    li,
+    strong,
+    .form-label,
+    b,
+    i {
+      font-size: 14px;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .text-main,
+    .logo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .logo {
+      transform: translateY(-135%);
+    }
+
+    .form-inner-cell {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .form-line-short {
+      border-bottom: 1px solid black;
+      width: 150px;
+      display: inline-block;
+      translate: 0px -5px;
+    }
+
+    .form-line-middle {
+      border-bottom: 1px solid black;
+      width: 250px;
+      display: inline-block;
+      translate: 0px -5px;
+    }
+
+    .form-line-long {
+      flex: 1;
+      border-bottom: 1px solid black;
+      width: 90%;
+      display: inline-block;
+      translate: 0px -7px;
+    }
+
+    th,
+    td {
+      font-weight: 400;
+     height: 41px;
+      font-size: 14px;
+    }
+
+    .container3 th,
+    .container3 td {
+      height: 72px;
+    }
+
+    .container2 p,
+    .container2 span,
+    .container3 p,
+    .container3 span {
+      font-size: 16px !important;
+    }
+
+    @page {
+      size: a4 landscape;
+      margin: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" style="width: 49%;background-image: url(@[assetImgPath]/images/new-border.png);">
+
+    <div class="content" style="height: 100%;">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img" />
+      <div style="display: flex; height: 100%;">
+        <div class="" style="padding-top: 60px; padding-inline: 35px; padding-bottom: 0px; width: 100%;">
+          <div class="header">
+            <div class="text-main" style="width: 100%">
+              <img src="@[assetImgPath]/images/Dept_text_logo-5.png" width="99%" alt="logo" style="translate: 0px 15px" />
+            </div>
+            <div>
+              <div class="center">
+                <img src="@[assetImgPath]/images/Group 68.png"
+                  style="width: 105px; position: absolute; top: 20%; left: 50%; transform: translateX(-50%);" alt="" />
+              </div>
+            </div>
+            <h1 class="center" style="
+                  text-transform: uppercase;
+                  font-size: 34px;
+                  margin-top: 160px;
+                  line-height: 47px;
+                ">
+              Permit <br> for <br> Electric Supervisors <br> Karachi
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container container2"
+    style="top: 100.5vh;">
+    <div class="content">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img" />
+      <div style="display: flex;align-items: center;">
+        <div style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;">
+          <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <div style="border: 1px solid #000;height: 290px;width: 260px;margin-bottom: 20px;display: flex;justify-content: center;align-items: center;position: relative;">
+              <div>
+                <p style="text-align: center;">Photograph of<br>
+                  Qualified Person</p>
+              <img src="" alt="" style="width: 100%;height: 100%;object-fit: cover;position: absolute;z-index: 2;left: 0;top: 0;">
+              </div>
+            </div>
+            <img src="@[signatureImgPath]" alt="" style="width: 200px;">
+         
+              <span class="form-line-short" style="width: 260px;"></span>
+          </div>
+        </div>
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;">
+          <div class="top-content">
+            <h1 class="center" style="
+                  font-size: 40px;
+                  text-transform: uppercase;
+                  margin-top: 50px;
+                  margin-bottom: 100px;
+                  white-space: nowrap;
+                ">
+              Permit for Electric <br> Supervisors
+            </h1>
+          </div>
+          <p style="text-align: justify; margin-bottom: 50px;text-align: center;line-height: 32px;">
+            (Authorized by Government Notification No. P.W.D. No. 46-M.1, dated 26th October, 1937)
+          </p>
+          <p style="text-align: justify; margin-bottom: 10px">
+            Date of issue<span class="form-line-middle" style="width:auto;">@[certificateDate]&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 10px; margin-top: 0px">
+            Name<span class="form-line-middle" style="width:auto;">@[Name of Employer]&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 10px; margin-top: 0px">
+            Date of Examination<span class="form-line-middle" style="width:auto;">@[Date of Examination]&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 10px; margin-top: 0px">
+            Place of Examination<span class="form-line-middle" style="width:auto;">@[Place of Examination]&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 10px; margin-top: 0px">
+            Competency Certificate No<span class="form-line-middle" style="width:auto;">@[Competency Certificate
+              No.]&nbsp;</span>
+          </p>
+          <p style="text-align: justify; margin-bottom: 30px;margin-top: 120px;">
+            SGP.Kar L(iii)179-2000Bks - 95-05(AM/E-i) (Office)
+          </p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="container container2"
+    style="top: 200.5vh;">
+    <div class="content">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img" />
+      <div style="display: flex;">
+        
+        <div class="" style="padding-top: 20px; padding-right: 60px;padding-left: 50px; padding-bottom: 0px;width: 50%;padding-right: 23px;">
+          <p style="
+                text-align: justify;
+                line-height: 45px;
+                margin-bottom: 0px;
+                
+                margin-top: 50px;
+              ">
+            This permit allows the holder to supervise and carry out electric installation work subject to conditions
+            mentioned in the rules framed under Rules 48 of the Electricity Rules, 1937, but does not allow him to
+            undertaking electrical contracting work unless he holds Contractor’s Licence.
+            </span>
+          </p>
+          <div style="padding-left: 100px;">
+            <p style="
+                  text-align: justify;
+                  margin-bottom: 5px;
+                  margin-top: 5px;
+                  line-height: 45px;
+
+                ">
+              The validity of Permit is shown on page 4 and 5. This permit is to be carried on the holder’s persons. This
+              permit consist of 14 pages.
+            </p>
+          </div>
+          <div style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 10px;
+                padding-right: 10px;
+                margin-top: 150px;
+              ">
+            <p class="center" style="margin-top: 10px;line-height: 32px;">
+              Secretary <br>
+              Licensing Board, <br>
+              Electric inspector, <br>
+              Karachi Region, Karachi.
+            </p>
+            <p class="center" style="margin-top: 10px;line-height: 32px;">
+              President <br />
+              Licensing Board, <br />
+              Karachi Region, Karachi,
+            </p>
+          </div>
+          <div style="display: flex; justify-content: flex-end">
+
+          </div>
+        </div>
+         <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;padding-left: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Date</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">
+                Signature of <br />
+                Renewing authority
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="container container2"
+    style="top: 300.5vh;">
+    <div class="content">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img"/>
+      <div style="display: flex;">
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;padding-right: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Date</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">
+                Signature of <br />
+                Renewing authority
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+          </table>
+        </div>
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px;width: 50%;padding-left: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Name of the firm</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Date of <br> Appointment</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Date of Discharge
+              </th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Initial
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+
+          </table>
+
+          <div style="display: flex; justify-content: flex-end">
+            <img src="@[qrImgPath]" width="110px" alt="" style="margin-top: 25px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="container container2"
+    style="top: 400.5vh;">
+    <div class="content">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img"/>
+      <div style="display: flex;">
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;padding-right: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Date</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">
+                Signature of <br />
+                Renewing authority
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+          </table>
+        </div>
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px;width: 50%;padding-left: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Name of the firm</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Date of <br> Appointment</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Date of Discharge
+              </th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Initial
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+
+          </table>
+
+          <div style="display: flex; justify-content: flex-end">
+            <img src="@[qrImgPath]" width="110px" alt="" style="margin-top: 25px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="container container2"
+    style="top: 500.5vh;">
+    <div class="content">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img"/>
+      <div style="display: flex;">
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;padding-right: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Date</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">
+                Signature of <br />
+                Renewing authority
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+          </table>
+        </div>
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px;width: 50%;padding-left: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Name of the firm</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Date of <br> Appointment</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Date of Discharge
+              </th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Initial
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Name of Firm]</td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container container2"
+    style="top: 600.5vh;">
+    <div class="content">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img"/>
+      <div style="display: flex;">
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;padding-right: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Date</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">Valid up to</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 33.33%;">
+                Signature of <br />
+                Renewing authority
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[certificateDate]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Validity]</td>
+              <td style="border: 1px solid #000; padding: 6px"> <img src="@[signatureImgPath]" alt="Signature" /></td>
+
+            </tr>
+
+          </table>
+        </div>
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px;width: 50%;padding-left: 12px;">
+        <h1 class="center" style="
+                  font-size: 40px;
+                  text-transform: uppercase;
+                  margin-bottom: 40px;
+                  
+                ">
+              Remarks
+            </h1>
+            <div style="display: flex;flex-direction: column;gap: 38px;">
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+
+
+
+              
+
+            </div>
+
+          <div style="display: flex; justify-content: flex-end">
+            <img src="@[qrImgPath]" width="100px" alt="" style="margin-top: 25px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
