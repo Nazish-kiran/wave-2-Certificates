@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      /* @[assetImgPath] */
+      .container {
+        /* position: relative; */
+        width: 100%;
+        height: auto;
+        min-height: 99vh;
+        background-size:cover;
+        background-repeat: no-repeat;
+      }
+
+      .content{
+        position: relative;
+        height: 100%;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 28rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .form-container {
+        width: 100%;
+        margin: auto;
+      }
+
+      p,
+      span,
+      li,
+      strong,
+      .form-label,
+      b,
+      i {
+        font-size: 16px;
+      }
+
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .text-main,
+      .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .logo {
+        transform: translateY(-135%);
+      }
+
+      .form-inner-cell {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: 150px;
+        display: inline-block;
+        translate: 0px -5px;
+      }
+
+      .form-line-middle {
+        border-bottom: 1px solid black;
+        width: 250px;
+        display: inline;
+        translate: 0px -5px;
+        margin-left: 10px;
+      }
+
+      .form-line-long {
+        flex: 1;
+        border-bottom: 1px solid black;
+        width: 95%;
+        display: inline-block;
+        translate: 0px -7px;
+      }
+
+      th,
+      td {
+        font-weight: 400;
+        height: 41px;
+        font-size: 14px;
+      }
+
+      .container2 p,
+      .container2 span,
+      .container3 p,
+      .container3 span {
+        font-size: 16px !important;
+      }
+
+      @page {
+        size: a4 landscape;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="display: flex">
+      <div class="container" style="width: 49%; background-image: url(@[assetImgPath]/images/border.png);">
+        <div class="content">
+          <img
+            src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+            alt=""
+            class="background-img"
+          />
+          <div
+            class=""
+            style="padding-top: 60px; padding-inline: 35px; padding-bottom: 0px"
+          >
+            <div class="header">
+              <div class="text-main" style="width: 100%">
+                <img
+                  src="@[assetImgPath]/images/ED_Dept_TextCurve_logo.png"
+                  width="99%"
+                  alt="logo"
+                  style="translate: 0px 15px"
+                />
+              </div>
+              <div>
+                <div class="center">
+                  <img
+                    src="@[assetImgPath]/images/images/Group 68.png"
+                    alt=""
+                    style="
+                      width: 105px;
+                      position: absolute;
+                      top: 20%;
+                      left: 50%;
+                      transform: translateX(-50%);
+                    "
+                  />
+                </div>
+              </div>
+              <h1
+                class="center"
+                style="
+                  text-transform: uppercase;
+                  font-size: 44px;
+                  margin-top: 160px;
+                "
+              >
+                Permit <br />
+                for <br />
+                Wiremen <br />
+                Karachi
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="background-image: url(@[assetImgPath]/images/border-land.png);">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div style="display: flex; align-items: center">
+          <div
+            style="
+              padding-top: 20px;
+              padding-inline: 60px;
+              padding-bottom: 0px;
+              width: 50%;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+              "
+            >
+              <div
+                style="
+                  border: 1px solid #000;
+                  height: 290px;
+                  width: 260px;
+                  margin-bottom: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative;
+                "
+              >
+                <div>
+                  <p style="text-align: center">
+                    Photograph of<br />
+                    Qualified Person
+                  </p>
+                  <!-- <img
+                    src=""
+                    alt=""
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      position: absolute;
+                      z-index: 2;
+                      left: 0;
+                      top: 0;
+                    "
+                  /> -->
+                  <img
+                   src="@[Photographs (Passport size/recent 4 Nos)]"
+                  alt="Photograph of the qualified person"
+                  style="
+                    font-size: 14px;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                    object-fit: cover;
+                    width: 100%;
+                  "
+                />
+                </div>
+              </div>
+               <img src="@[signatureImgPath]" alt="Signature" style="width: 80px; height: auto;margin-top: 20px;" />
+</td>
+
+              <span class="form-line-short" style="width: 260px;margin-top: 15px;"></span>
+            </div>
+          </div>
+          <div
+            class=""
+            style="
+              padding-top: 20px;
+              padding-inline: 60px;
+              padding-bottom: 0px;
+              width: 50%;
+            "
+          >
+            <div class="top-content">
+              <h1
+                class="center"
+                style="
+                  font-size: 42px;
+                  text-transform: uppercase;
+                  margin-bottom: 10px;
+                  margin-top: 50px;
+                  margin-bottom: 80px;
+                "
+              >
+                Permit for wiremen
+              </h1>
+            </div>
+            <p
+              style="
+                text-align: justify;
+                margin-bottom: 100px;
+                text-align: center;
+                line-height: 32px;
+              "
+            >
+              (Authorized by Govt. Notification number SOPP-5/6-73. Dated 1st
+              January, 1982 issued by the Irrigation and Power Department,
+              Government of Sindh, Karachi).
+            </p>
+            <p style="text-align: justify; margin-bottom: 10px">
+              Date of issue<span class="form-line-middle" style="width: 340px"
+                >@[certificateDate]&nbsp;</span
+              >
+            </p>
+            <p
+              style="text-align: justify; margin-bottom: 10px; margin-top: 0px"
+            >
+              Name<span class="form-line-middle" style="width: 420px"
+                >@[First Name] @[Last Name]&nbsp;</span
+              >
+            </p>
+            <p
+              style="text-align: justify; margin-bottom: 10px; margin-top: 0px"
+            >
+              Date of Examination<span class="form-line-middle"
+                >@[Date of Examination]&nbsp;</span
+              >
+            </p>
+            <p
+              style="text-align: justify; margin-bottom: 10px; margin-top: 0px"
+            >
+              Place of Examination<span class="form-line-middle"
+                >@[Place of Examination]&nbsp;</span
+              >
+            </p>
+            <p
+              style="
+                text-align: justify;
+                margin-bottom: 30px;
+                margin-top: 120px;
+              "
+            >
+              SGP.Kar L(iii)179-2000Bks - 95-05(AM/E-i) (Office)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="background-image: url(@[assetImgPath]/images/border-land.png);">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div style="display: flex">
+          <div
+            class=""
+            style="
+              padding-top: 20px;
+              padding-right: 60px;
+              padding-left: 50px;
+              padding-bottom: 0px;
+              width: 50%;
+            "
+          >
+            <p
+              style="
+                text-align: justify;
+                line-height: 45px;
+                margin-bottom: 0px;
+                text-align: center;
+                margin-top: 50px;
+              "
+            >
+              (1) This permit allows the holder to carry out wiring work only
+              subjcet to the conditions mentioned in the rules framed under
+              Rules-48 of the Electricity Rules, 1937, but does not allow him to
+              undertaking supervising or electrical
+              <span style="translate: 20px 0px; display: inline-block">
+                contracting work.
+              </span>
+            </p>
+            <div style="padding-left: 100px; padding-right: 28px">
+              <p
+                style="
+                  text-align: justify;
+                  margin-bottom: 5px;
+                  margin-top: 5px;
+                  line-height: 45px;
+                  text-align: center;
+                "
+              >
+                (2) The validity of the Permit is shown on pages 4 and 5.<br />
+
+                (3) This permit is to be carried on the holders persons.
+              </p>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 10px;
+                padding-right: 10px;
+                margin-top: 110px;
+              "
+            >
+              <p class="center" style="margin-top: 10px; line-height: 32px">
+                Secretary <br />
+                Licensing Board, <br />
+
+                Karachi Region.
+              </p>
+              <p class="center" style="margin-top: 10px; line-height: 32px">
+                President <br />
+                Licensing Board, <br />
+                Karachi Region,
+              </p>
+            </div>
+          </div>
+          <div
+            class=""
+            style="
+              padding-top: 20px;
+              padding-inline: 60px;
+              padding-bottom: 0px;
+              width: 50%;
+              padding-left: 12px;
+            "
+          >
+            <table
+              style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              "
+            >
+              <tr>
+                <th style="border: 1px solid #000; padding: 6px; width: 33.33%">
+                  Date
+                </th>
+                <th style="border: 1px solid #000; padding: 6px; width: 33.33%">
+                  Valid up to
+                </th>
+                <th style="border: 1px solid #000; padding: 6px; width: 33.33%">
+                  Signature of <br />
+                  Renewing authority
+                </th>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                  @[certificateDate]
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                  @[Valid up to]
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                  <img src="@[signatureImgPath]" alt="Signature" style="width: 80px; height: auto;" />
+</td>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+                </td>
+                <td style="border: 1px solid #000; padding: 6px">
+</td>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="container container2" style="background-image: url(@[assetImgPath]/images/border-land.png)">
+    <div class="content">
+      <img src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png" alt="" class="background-img"/>
+      <div style="display: flex;">
+          <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px; width: 50%;padding-right: 12px;">
+          <table style="
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #000;
+                margin-top: 50px;
+              ">
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Name of the firm</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">Date of <br> Appointment</th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Date of Discharge
+              </th>
+              <th style="border: 1px solid #000; padding: 6px;width: 25%;">
+                Initial
+              </th>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px">@[Organization Name]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[Date of Examination]</td>
+              <td style="border: 1px solid #000; padding: 6px">@[End Date]</td>
+              <td style="border: 1px solid #000; padding: 6px"><img src="@[signatureImgPath]" alt="Signature" style="width: 80px; height:auto;" /></td>
+
+
+            </tr>
+
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+             <td style="border: 1px solid #000; padding: 6px"></td>
+              <td style="border: 1px solid #000; padding: 6px"></td>
+            </tr>
+
+          </table>
+
+          <!-- <div style="display: flex; justify-content: flex-end">
+            <img src="@[qrImgPath]" width="110px" alt="" style="margin-top: 25px" />
+          </div> -->
+        </div>
+        <div class="" style="padding-top: 20px; padding-inline: 60px; padding-bottom: 0px;width: 50%;padding-left: 12px;">
+        <h1 class="center" style="
+                  font-size: 40px;
+                  text-transform: uppercase;
+                  margin-bottom: 40px;
+                  
+                ">
+              Remarks
+            </h1>
+            <div style="display: flex;flex-direction: column;gap: 38px;">
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+              <span class="form-line-long">&nbsp;</span>
+
+
+
+              
+
+            </div>
+
+          <div style="display: flex; justify-content: flex-end">
+            <img src="@[qrImagePath]" width="100px" alt="" style="margin-top: 25px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

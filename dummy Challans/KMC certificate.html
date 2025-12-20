@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+      :root {
+        --poppins-semibold: "poppins-semibold", sans-serif;
+      }
+      * {
+        font-family: var(--poppins-semibold);
+      }
+
+      /* @[assetImgPath] */
+      .container {
+        position: absolute;
+        background: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 1px;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 37rem;
+        top: 25%;
+        left: 15%;
+        z-index: -1;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .form-container {
+        width: 100%;
+        margin: auto;
+      }
+
+      p,
+      span,
+      li,
+      strong,
+      .form-label,
+      b,
+      i {
+        font-size: 16px;
+      }
+
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+      }
+      .form-line {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+
+      @page {
+        size: a4;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 60px; padding-inline: 50px; padding-bottom: 0px"
+        >
+          <p>License No.</p>
+          <div class="header">
+            <div>
+              <div class="center">
+                <img src="@[assetImgPath]/images/image 13.svg" style="width: 140px" alt="" />
+              </div>
+            </div>
+            <h1
+              class="center"
+              style="
+                text-transform: uppercase;
+                font-size: 40.5px;
+                line-height: 47px;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                font-family: 'Antonio', sans-serif;
+              "
+            >
+              Karachi Metropolitan Corporation (KMC)
+            </h1>
+            <p style="margin-bottom: 0px">hereby awards</p>
+            <p style="font-weight: bold; font-size: 20px; margin-bottom: 0px">
+              Regular License
+            </p>
+            <p style="margin-bottom: 50px">to</p>
+            <div
+              style="
+                padding-inline: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
+              <p class="center">
+                which has been evaluated according to the Minimum Service
+                Delivery Standards of the Karachi Metropolitan Corporation (KMC)
+              </p>
+              <span class="form-line" style="margin-block: 20px;margin-top: 18px;"
+                >&nbsp;</span
+              >
+              <p class="center">
+                The services were found to be in compliance with the
+                requirements to qualify for the Regular License
+              </p>
+            </div>
+          </div>
+          <div style="position: absolute;bottom: 20px;width: 88%;">
+
+              <div style="display: flex; justify-content: flex-end;margin-bottom: 30px;">
+                <img
+                  src="@[qrImgPath]"
+                  width="110px"
+                  alt=""
+                 
+                />
+              </div>
+              <div style="display: flex;justify-content: space-between;align-items: center;">
+                <div>
+                  <p>Issue Date : <span class="form-line">&nbsp;</span></p>
+                  <p>Valid Till : <span class="form-line">&nbsp;</span></p>
+                </div>
+                <p style="text-align: right;">
+                  <span class="form-line"style="text-align: right;">&nbsp;</span> <br />Chief Executive Officer 
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

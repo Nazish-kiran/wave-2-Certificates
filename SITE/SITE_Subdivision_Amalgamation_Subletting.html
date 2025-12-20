@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      /* @[assetImgPath]/ */
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+      }
+      .background-img {
+        position: absolute;
+        height: 28rem;
+        top: 30%;
+        left: 23%;
+        z-index: -1;
+      }
+      .center {
+        text-align: center;
+      }
+      .long-line {
+        display: inline-block;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: 200px;
+        padding-left: 5px;
+        word-wrap: break-word;
+        margin-bottom: 10px;
+        translate: 0px -5px;
+      }
+
+      .short-line {
+        display: inline;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: 100px;
+        padding-left: 5px;
+        word-wrap: break-word;
+        translate: 0px -5px;
+      }
+      .head-info span {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 9.5px;
+      }
+      .head-info {
+        margin-bottom: 10px;
+      }
+      .head-info div {
+        line-height: 12.8px;
+      }
+      p,
+      span,
+      li {
+        font-size: 13px;
+      }
+
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 30px; padding-inline: 35px; padding-bottom: 0px"
+        >
+          
+          <div
+            class="top-content"
+            style="padding-inline: 20px; padding-top: 10px; position: relative;"
+          >
+           <h1 class="center" style="font-size: 28.4px">
+              Sindh Industrial Trading Estates Limited
+            </h1>
+            <p class="center" style="font-size: 18px; font-weight: 700">
+              Manghopir Road, Karachi-75700
+            </p>
+            <div
+              class="head-info"
+              style="display: flex; justify-content: space-between"
+            >
+              <div style="display: flex; gap: 20px">
+                <div>
+                  <span style="text-transform: uppercase">
+                    Managing Director </span
+                  ><br />
+                  <span style="text-transform: uppercase"> Secretary </span
+                  ><br />
+                  <span style="text-transform: uppercase"> Director admin </span
+                  ><br />
+                  <span style="text-transform: uppercase">
+                    Director Finance</span
+                  ><br />
+                  <span style="text-transform: uppercase"> P.A.B.X. No. </span
+                  ><br />
+                </div>
+                <div>
+                  <span>: 021-99333152-3</span><br />
+                  <span> : 021-99333164 </span><br />
+                  <span> : 021-99333170 </span><br />
+                  <span> : 021-99333161 </span><br />
+                  <span> : 021-9933317-9 </span><br />
+                </div>
+              </div>
+
+              <img
+                src="logos/SITE logo.svg"
+                alt=""
+                style="height: 110px; translate: -5px 20px"
+              />
+              <div style="display: flex; gap: 20px">
+                <div>
+                  <span style="text-transform: uppercase"> CHIEF ENG. </span
+                  ><br />
+                  <span style="text-transform: uppercase">
+                    Estate Engr. SHW PH-1 & 11 </span
+                  ><br />
+                  <span style="text-transform: uppercase">
+                    Estate Engr. N. Abad </span
+                  ><br />
+                  <span style="text-transform: uppercase">
+                    Estate Engr. Kotri </span
+                  ><br />
+                  <span style="text-transform: uppercase">
+                    Estate Engr. Hyd.
+                  </span>
+                  <br />
+                  <span style="text-transform: uppercase">
+                    Estate Engr. Sukkur
+                  </span>
+                </div>
+                <div>
+                  <span>: 021-99333148</span><br />
+                  <span>: 021-36881830</span><br />
+                  <span>: 0254-670262</span><br />
+                  <span>: 0223-870008</span><br />
+                  <span>: 022-925013</span> <br />
+                  <span>: 071-5807045</span>
+                </div>
+              </div>
+            </div>
+             <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+              "
+            >
+              <p style="margin: 0; font-style: italic">
+                Ref No
+                <span class="short-line" style="width: 130px"> &nbsp;</span>
+              </p>
+              <p style="margin: 0; font-style: italic;width: 215px;">
+                Date
+                <span class="short-line" style="width: 130px"> &nbsp;</span>
+              </p>
+            </div>
+            <div style="padding-top: 10px; width: 100%;">
+              <p style="margin: 0px">
+                <span style="font-weight: 700"> M/s. </span>
+                <span
+                  class="short-line"
+                  style="translate: 0px -5px; width: 150px"
+                  >@[First Name] @[Last Name]</span
+                >
+                <br />
+                R/o
+                <span
+                  class="short-line"
+                  style="translate: 0px -5px; width: 150px"
+                  >@[Address]</span
+                >
+                <br />
+              </p>
+            </div>
+            <div style="margin: 0px 10px;">
+              <div
+                style="
+                  display: flex;
+                  gap: 31px;
+                  align-items: flex-start;
+                  margin-top: 15px;
+                "
+              >
+                <p style="font-weight: 600">SUBJECT:-</p>
+                <p
+                  style="
+                    text-decoration: underline;
+                    font-weight: 600;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                  "
+                >
+                  SUBLETTING OF PLOT NO @[Plot No.] Ref:@[Reference No.] Your letter dated: @[certificateDate]
+                </p>
+              </div>
+
+              <div style="display: flex; gap: 42px; align-items: flex-start">
+                <p style="font-style: italic; margin-bottom: 0px">Reference:</p>
+                <p
+                  style="
+                    margin-bottom: 0px;
+                    text-decoration: underline;
+                    font-style: italic;
+                  "
+                >
+                  Your letter dated:@[certificateDate].
+                </p>
+              </div>
+              <!-- <div style="display: flex; gap: 110px; align-items: flex-start">
+                <p style="font-style: italic; margin-bottom: 0px"></p>
+                <p style="margin-top: 37px; margin-bottom: 0px">
+                  Since you have paid our usual amalgamation fee of Rs:
+                  <span class="short-line">&nbsp;</span>/- we hereby give our
+                </p>
+              </div> -->
+              <p
+                style="
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                  text-align: justify;
+                  margin-top: 40px;
+                "
+              >
+                With reference to your above letter you are advised to submit Tenancy Agreement, duly executed and also pay subletting fee @ Rs<span
+                  class="short-line"
+                  style="width: 200px"
+                  >@[Subletting Fee]</span> 
+                  /- per Sft., so that further action in the matter may be taken accordingly.
+
+              </p>
+            </div>
+          </div>
+          <img
+        src="@[signatureImgPath]"
+        alt="Signature"
+        style="height: 80px; margin-left: 440px; margin-top: 10px;"
+    />
+          <p
+            style="
+              font-weight: 700;
+              font-size: 15px;
+              margin-top: 30px;
+              text-align: right;
+              translate: -100px 0px;
+              margin-bottom: 5px;
+              text-transform: uppercase;
+            "
+          >
+            Director Administration
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              margin-top: 80px;
+            "
+          >
+            <p style="margin-bottom: 0px;margin-top: 0px;">
+              Copy to:- <br />
+              <span
+                style="display: inline-block; margin-left: 5px; margin-top: 7px"
+              >
+                1. The Director Finance, SITE Limited Karachi.<br />
+                2. The Estate Engineer (D/F) SITE Limited Karachi.<br />
+                3. The Office Superintendent, Engineering Section, SITE Limited Karachi.<br />
+              </span>
+            </p>
+          </div>
+          <div style="position: absolute; bottom: 110px; right: 60px;">
+            <img src="@[qrImgPath]" width="80px" alt="123" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -13,7 +13,7 @@
       }
       .container {
         position: absolute;
-        background-image: url(@[assetImgPath]/border.png);
+        background-image: url(@[assetImgPath]/images/border.png);
         width: 99%;
         height: 99%;
         min-height: 900px;
@@ -41,11 +41,10 @@
       }
 
       .short-line {
-        display: inline-block;
+        display: inline;
         box-sizing: border-box;
         border-bottom: 1px solid black;
         width: auto;
-        padding-left: 5px;
         word-wrap: break-word;
         translate: 0px -5px;
       }
@@ -81,7 +80,7 @@
     <div class="container">
       <div class="content">
         <img
-          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
           alt=""
           class="background-img"
         />
@@ -99,14 +98,14 @@
               "
             >
               <img
-                src="@[assetImgPath]/Group 68.png"
+                src="@[assetImgPath]/images/Group 68.png"
                 width="90px"
                 alt=""
                 style="margin-top: 20px"
               />
               <div style="font-family: 'Times New Roman', Times, serif">
                 <p class="center" style="margin-bottom: 0px">
-                  No. <span class="short-line">&nbsp;</span>
+                  No. <span class="short-line">@[License No.]</span>
                 </p>
                 <h1
                   class="center"
@@ -139,32 +138,42 @@
               "
             >
               <div>
-                <p style="margin: 0px;width: 230px;">
+                <p style="margin: 0px; width: 230px">
                   M/s.
                   <span
                     class="short-line"
-                    style="translate: 0px -5px; width: 198px;margin-bottom: 9px;display: inline;line-height: 26px;"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, impedit nostrum!</span
+                    style="
+                      translate: 0px -5px;
+                      width: 198px;
+                      margin-bottom: 9px;
+                      display: inline;
+                      line-height: 26px;
+                    "
+                    >@[First Name]</span
                   >
                 </p>
               </div>
 
-              <p style="margin: 0px; font-size: 12px;margin-top: 10px;" class="center">
-                Karachi, dated<span class="short-line">&nbsp;</span>
+              <p
+                style="margin: 0px; font-size: 12px; margin-top: 10px"
+                class="center"
+              >
+                Karachi, dated<span class="short-line">@[certificateDate]</span>
               </p>
             </div>
-            <div style="display: flex; gap: 15px; align-items: center">
-              <p style="font-weight: 600; margin-bottom: 5px">Subject:</p>
-              <span class="short-line" style="width: 100%">&nbsp;</span>
+            <div style="display: flex; gap: 15px; margin-top: 20px">
+              <p style="font-weight: 600; margin-bottom: 5px; margin-top: 0px">
+                Subject:
+              </p>
+              <div>
+                <span class="short-line">@[Subject:]</span>
+              </div>
             </div>
-            <div style="display: flex; gap: 74px; align-items: center">
-              <p style="font-weight: 600; margin-top: 0px"></p>
-              <span class="short-line" style="width: 100%">&nbsp;</span>
+            <div
+              style="position: absolute; top: 23.2%; left: 15.2%; width: 79.9%"
+            >
+              <p style="line-height: 27px"><!-- subject here --></p>
             </div>
-            <div style="position: absolute; top: 23.2%;left: 15.2%;width: 79.9%;">
-             <p style="line-height: 27px;"><!-- subject here --></p>
-             
-           </div>
             <p
               style="
                 margin-bottom: 10px;
@@ -174,71 +183,80 @@
               "
             >
               Please refer to your application dated<span class="short-line"
-                >&nbsp;</span
+                >@[certificateDate]</span
               >on the subject cited above. In this connection, the licensing
               authority has decided to offer you<span class="short-line"
-                >&nbsp;</span
+                >@[Permit]</span
               >permit for coal over an area of<span class="short-line"
-                >&nbsp;</span
+                >@[Area]</span
               >as per sketch / site plan (attached in duplicate), for a period
-              of<span class="short-line">&nbsp;</span>, in terms of Part-IV,
-              Division-2 of Sindh Mining Concession Rules-2002, subject to the
-              following conditions:-
+              of<span class="short-line">@[Validity]</span>, in terms of
+              Part-IV, Division-2 of Sindh Mining Concession Rules-2002, subject
+              to the following conditions:-
             </p>
-            <span class="short-line" style="width: 100%; margin-bottom: 10px"
-              >&nbsp;</span
+            <span
+              class="short-line"
+              style="margin-bottom: 10px; line-height: 22px"
+              >@[Terms and condition]</span
             >
-            <br />
-            <span class="short-line" style="width: 100%; margin-bottom: 10px"
-              >&nbsp;</span
-            >
-            <br />
-            <span class="short-line" style="width: 100%; margin-bottom: 10px"
-              >&nbsp;</span
-            >
-             <div style="position: absolute; top: 37.7%;width: 88%;">
-             <p style="line-height: 28px;"><!-- description here --></p>
-             
-           </div>
             <p style="margin-top: 85px">
               2. This offer does not confer any right upon you to claim
               allotment of land under the exploration permit.
             </p>
-            <div
-              style="
-                font-weight: 600;
-                font-size: 16px;
-                display: flex;
-                justify-content: flex-end;
-                margin-top: 40px;
-                text-transform: uppercase;
-                translate: -100px 0px;
-              "
-            >
-              <p style="text-align: center">
-                Director General coal mines <br />
-                development
-              </p>
-            </div>
-            <p style="margin-bottom: 0px">
-              Copy to:- <br />
-              <span
-                style="display: inline-block; margin-left: 5px; margin-top: 15px"
-              >
-                1. The Chief Inspector of Coal Mines, Government of Sindh,
-                Karachi<br />
-                2. The Accounts Officer, Directorate of Coal Mines Dev:, Sindh,
-                Karachi <br />
-                3. Survey Drawing Branch <br />
-                4. PS to Minister for Energy, Sindh, Karachi <br />
-                5. PS to Secretary, Energy Department, Government of Sindh,
-                Karachi <br />
-                6. PS to Director General, Coal Mines Development, Sindh,
-                Karachi
-              </span>
-            </p>
-           
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="position: absolute; top: 100vh">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="
+            padding-top: 35px;
+            padding-inline: 45px;
+            padding-bottom: 0px;
+            position: absolute;
+            width: 92%;
+            bottom: 40px;
+          "
+        >
+          <div
+            style="
+              font-weight: 600;
+              font-size: 16px;
+              display: flex;
+              justify-content: flex-end;
+              margin-top: 40px;
+              text-transform: uppercase;
+              translate: -100px 0px;
+            "
+          >
+            <p style="text-align: center">
+              Director General coal mines <br />
+              development
+            </p>
+          </div>
+          <p style="margin-bottom: 0px">
+            Copy to:- <br />
+            <span
+              style="display: inline-block; margin-left: 5px; margin-top: 15px"
+            >
+              1. The Chief Inspector of Coal Mines, Government of Sindh,
+              Karachi<br />
+              2. The Accounts Officer, Directorate of Coal Mines Dev:, Sindh,
+              Karachi <br />
+              3. Survey Drawing Branch <br />
+              4. PS to Minister for Energy, Sindh, Karachi <br />
+              5. PS to Secretary, Energy Department, Government of Sindh,
+              Karachi <br />
+              6. PS to Director General, Coal Mines Development, Sindh, Karachi
+            </span>
+          </p>
           <div
             style="
               display: flex;
@@ -248,18 +266,16 @@
               margin-top: 60px;
             "
           >
-            <p class="center" style="text-transform: uppercase;margin-bottom: 0px;">
-              <span
-                style="
-                  font-weight: 600;
-                "
-                >(Shahzad muzaffar qadir)</span
-              >
+            <p
+              class="center"
+              style="text-transform: uppercase; margin-bottom: 0px"
+            >
+              <span style="font-weight: 600">(Shahzad muzaffar qadir)</span>
               <br />
               Assistant director <br />
               for Director general
             </p>
-            <img src="@[qrImgPath]" width="79px" alt="" />
+            <img src="@[qrImagePath]" width="79px" alt="" />
           </div>
         </div>
       </div>

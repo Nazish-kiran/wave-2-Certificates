@@ -16,7 +16,7 @@
       }
       .container {
         position: absolute;
-        background: url(@[assetImgPath]/border.png);
+        background-image: url(@[assetImgPath]/images/border.png);
         width: 99%;
         height: 99%;
         min-height: 900px;
@@ -27,9 +27,11 @@
       .background-img {
         position: absolute;
         height: 26rem;
-        top: 30%;
-        left: 27.5%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: -1;
+        opacity: 0.10;
       }
 
       .center {
@@ -131,10 +133,10 @@
   </head>
 
   <body>
-    <div class="container ">
+    <div class="container">
       <div class="content">
         <img
-          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          src="@[assetImgPath]/images/Group 68.png"
           alt=""
           class="background-img"
         />
@@ -143,14 +145,19 @@
           style="padding-top: 60px; padding-inline: 35px; padding-bottom: 0px"
         >
           <div class="header">
-            <div class="text-main" style="width: 97%">
-              <img src="@[assetImgPath]/Dept_text_logo-4.png" width="100%" alt="logo" />
+            <div class="text-main" style="width: 75%">
+              <img
+                src="@[assetImgPath]/images/Office of the market commiTtee.png"
+                width="100%"
+                alt="logo"
+              />
+              <span class="form-line-middle" style="font-size: 28px;font-weight: 600;font-family:' poppins-semibold', sans-serif;text-transform: uppercase;padding-inline: 10px;"></span>
             </div>
           </div>
           <div class="main">
             <p
               class="center"
-              style="font-size: 17px; font-weight: 700; margin-bottom: 30px"
+              style="font-size: 17px; font-weight: 700; margin-bottom: 30px; margin-top: 10px;"
             >
               A-212 Block-3 Gulshan-e-Iqbal Karachi. Office # 34977406, Fax #
               34992096 <br />
@@ -161,13 +168,17 @@
               the purchase and <br />
               or saleof Agricultural produce.
             </p>
-            <div>
-              <div class="center">
-                <img src="@[assetImgPath]/Group 68.png" style="width: 100px" alt="" />
+            <div style="display: flex; align-items: center;justify-content: flex-end;">
+              <div class="center" style="width: 20%;">
+                <img
+                  src="@[assetImgPath]/images/Group 68.png"
+                  style="width: 100px"
+                  alt=""
+                />
               </div>
-              <div style="width: 50%; float: right; margin-block: 10px">
-                <span style="font-weight: 700; translate: 0px -40px"
-                  >Group <span class="form-line-middle">&nbsp;</span></span
+              <div style="width: 40%; margin-block: 10px;">
+                <span style="font-weight: 700; display: block; text-align: end; padding-right: 20px"
+                  >Group <span class="form-line-middle" style="font-size: 40px;">&nbsp;@[Group]</span></span
                 >
               </div>
             </div>
@@ -175,25 +186,25 @@
               <div style="display: flex; width: 100%">
                 <p>1. No: of the Licence</p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">&nbsp; @[Lic. No.]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
                 <p>2. Notified Market Area for which the Licence is granted.</p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[Notified Market Area for which the Licence is granted.] </span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
                 <p>3. Nature of Business & Group</p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[Nature of Business & Group]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
                 <p>4. Particular of the place for which Licence is granted</p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[Particular of the place for which Licence is granted]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
@@ -202,19 +213,19 @@
                   full of Licence
                 </p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[Name parentage caste residence and Address in full of Licence]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
                 <p>6. Date from which the Licence takes effect</p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[certificateValidityFrom]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
                 <p>7. Date on which the Licence Expires</p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[certificateValidityTo]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
@@ -223,43 +234,23 @@
                   Licence is granted.
                 </p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[Any additional condition under which the Licence is granted]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
                 <p>9. Fee Paid</p>
                 <div>
-                  <span class="form-line-middle">&nbsp;</span>
+                  <span class="form-line-middle">@[Fee Paid]</span>
                 </div>
               </div>
               <div style="display: flex; width: 100%">
                 <p>10. Remarks</p>
                 <div>
-                  <span class="form-line-middle"
-                    >&nbsp;</span
-                  >
+                  <span class="form-line-middle">@[Remarks]</span>
                 </div>
               </div>
             </div>
-           
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container " style="position: absolute;top: 100vh;">
-      <div class="content">
-        <img
-          src="@[assetImgPath]/Coat_of_arms_of_Sindh_Province.svg 1.png"
-          alt=""
-          class="background-img"
-        />
-        <div
-          class=""
-          style="padding-top: 60px; padding-inline: 35px; padding-bottom: 0px"
-        >
-       
-          <div class="main">
-            <div style="margin-top: 0px">
+            <div style="margin-top: 10px">
               <div
                 style="
                   display: flex;
@@ -273,9 +264,8 @@
                     of Issue
                   </p>
                   <p style="margin-bottom: 0px; translate: 0px 7px">
-                    Note: Not Valid for Court and Shall not Create any <br />
+                    Note: @[Note] <br />
                     <span style="text-indent: 37px; display: inline-block">
-                      title of ownership.
                     </span>
                   </p>
                 </div>
@@ -293,11 +283,8 @@
                       the License with Designation
                     </p>
                   </div>
-                  <img
-                    src="@[qrImgPath]"
-                    style="width: 83px; height: 80px"
-                    alt=""
-                  />
+                  <img src="@[qrImagePath]" style="width: 83px; height: 83px" alt="" />
+
                 </div>
               </div>
             </div>
