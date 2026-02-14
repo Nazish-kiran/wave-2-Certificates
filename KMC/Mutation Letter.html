@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 700;
+      }
+
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 4px;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 28rem;
+        top: 30%;
+        left: 23%;
+        z-index: -1;
+        opacity: .1;
+      }
+
+      .center {
+        text-align: center;
+        width: 100%;
+      }
+
+      .short-line {
+        display: inline;
+        border-bottom: 1px solid black;
+        width: auto;
+      }
+
+      p,
+      span {
+        font-size: 14px;
+      }
+
+      td {
+        font-size: 13px;
+        vertical-align: middle;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/KMC-watermark.png"
+          class="background-img"
+        />
+
+        <div style="padding-top: 30px; padding-inline: 35px">
+          <div style="display: flex; align-items: center">
+            <img src="@[assetImgPath]/images/kmc-logo.png" width="110px" alt="" />
+
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 16px;
+
+                  text-transform: uppercase;
+                  line-height: 20px;
+                  margin-left: 20px;
+                "
+              >
+                KARACHI METROPOLITAN CORPORATION<br />
+                <span style="font-weight: 400">
+                  DEPUTY DIRECTOR LEASES BALDIA TOWN LAND DEPARTMENT, KMC<br />
+                  3RD FLOOR SUPER MARKET BUILDING LIAQUATABAD, KARACHI
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="center" style="margin-top: 0px">MUTATION LETTER</h3>
+
+          <!--BORDER 1 -->
+          <div
+            style="
+              border: 2px solid #000;
+              padding: 12px;
+              margin-top: 15px;
+              margin-bottom: 10px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 10px;
+              "
+            >
+              <div style="border: 1.5px solid #000; padding: 3px 10px">
+                OFFICE (S) COPY
+              </div>
+
+              <div style="text-align: right; font-weight: 700">
+                <p style="margin: 0">
+                  NO.<span class="short-line">@[License No.]</span>
+                </p>
+                <div style="display: flex">
+                  <p style="margin: 3px 0 0 0">
+                    DATED: <span class="short-line">@[certificateDate]</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: flex; justify-content: space-between; gap: 15px"
+            >
+              <div style="width: 55%">
+                <p
+                  style="
+                    font-weight: 400;
+                    text-decoration: underline;
+                    margin-top: 10px;
+                  "
+                >
+                  NAME & ADDRESS OF MUTATEE
+                </p>
+
+                <p style="line-height: 26px;width: 250px;text-transform: uppercase;">
+                  @[First Name] @[Last Name]<br />
+                 S/O, D/O @[Father Name]<br />
+                  CNIC # @[CNIC]<br />
+                  R/O @[Postal Address], @[District] TOWN,<br />
+                  KARACHI.
+                </p>
+              </div>
+
+              <div style="width: 50%">
+                <table>
+                  <tr>
+                    <td style="border-right: 1px solid black">
+                      <strong>SCHEME</strong>
+                    </td>
+                    <td colspan="3" style="border-right: 1px solid black">
+                     @[District] TOWN
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="border-right: 1px solid black">
+                      <strong>TOWNSHIP CATEGORY</strong>
+                    </td>
+                    <td style="border-right: 1px solid black">
+                      <strong>PLOT NO.</strong>
+                    </td>
+                    <td style="border-right: 1px solid black">
+                      <strong>SHEET NO.</strong>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="border-right: 1px solid black">
+                      <strong>@[Township Category]</strong>
+                    </td>
+                    <td style="border-right: 1px solid black">@[Plot No.]</td>
+                    <td style="border-right: 1px solid black">@[Sheet No.]</td>
+                  </tr>
+
+                  <tr>
+                    <td style="border-right: 1px solid black">
+                      <strong>MEASURING</strong><br />@[Measuring Sq. Yds] SQ. YDS
+                    </td>
+                    <td colspan="3" style="border-right: 1px solid black">
+                      @[District] TOWN
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      colspan="4"
+                      style="border-right: 1px solid black; text-align: left"
+                    >
+                      <strong>APPLICATION DATED:</strong> @[certificateDate]<br />
+                      <strong>CHALLAN NO.:</strong> @[Challan No.],
+                      
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!--BORDER 2-->
+          <div style="border: 2px solid #000; padding: 15px">
+            <p style="line-height: 28px;text-align: justify;margin-bottom: 0px;">
+              <strong>Dear Applicants,</strong> <br />
+              The competent authority has been pleased to accord necessary
+              approval regarding mutation of lease hold rights of the above
+              noted plot in your name by way of registered sale deed vide No.
+              @[Vide No.], dated @[Mutation Date], on the same terms and conditions of which
+              the plot was originally allotted.
+              <br />
+              <span style="text-indent: 150px;display: inline-block;">
+                The above name owner shall abide all rules / regulations and
+                adhere all terms and condition of sale of the plot in future.
+                Therefore, that above said plot mutation in your name.
+              </span>
+              <br />
+              <span style="text-indent: 150px;display: inline-block;">
+                This mutation however, can be withdrawn / cancelled at any later
+                stage if it is proved that you have obtained this mutation of
+                the above said plot through misrepresentation / misconceiving or
+                concealing the facts of the case.
+              </span>
+            </p>
+            <div style="display: flex;justify-content: flex-end;">
+              <div>
+                <img src="@[signatureImgPath]" style="width: 130px;" alt="">
+                <p style="font-weight: 700;text-align: center;margin-block:0px;">
+                  Deputy Director Land<br />
+                  Lease @[District] Town,<br />
+                  Land Department KMC
+                </p>
+              </div>
+            </div>
+
+            <p style="font-size: 13px; margin-top: 20px;margin-bottom: 0px;">
+              <strong style="text-decoration: underline;">Copy For Information & Necessary Action:</strong><br />
+              1. Deputy Director Land & Record KMC For Necessary Entry In KMC
+              Record
+            </p>
+          </div>
+
+          <div style="position: absolute; bottom: 25px; right: 35px">
+            <img src="@[qrImagePath]" width="85px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 700;
+      }
+
+      .container {
+        position: absolute;
+        background-image: url(logos/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 4px;
+      }
+      .container-next-page{
+        top: 101vh;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 28rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: .1;
+      }
+
+      .center {
+        text-align: center;
+        width: 100%;
+      }
+
+      .short-line {
+        display: inline;
+        border-bottom: 1px solid black;
+        width: auto;
+      }
+
+      p,
+      span {
+        font-size: 14px;
+      }
+
+      td {
+        font-size: 13px;
+        vertical-align: middle;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 8px 10px;
+        /* text-align: center; */
+      }
+
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="logos/kmc-watermark.png"
+          class="background-img"
+        />
+
+        <div style="padding-top: 30px; padding-inline: 35px">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <img src="logos/kmc-logo.png" width="110" alt="" />
+
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 20px;
+                  line-height: 30px;
+                  line-height: 20px;
+                "
+              >
+                <span style="font-size: 18px;display: inline-block; margin-bottom: 10px;text-transform: uppercase;">KARACHI METROPOLITAN CORPORATION<br>
+                  OFFICE OF THE SENIOR DIRECTOR<br>
+                  ENTERPRISE & INVESTMENT PROMOTION</span><br>
+                <span style="font-weight: 400; font-size: 14px; display: inline-block;">
+                  1st Floor, KMC Building M.A Jinnah Road, Karachi Tel: 99216747
+                </span>
+              </div>
+            </div>
+            <div style="width: 110px;">
+
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: start;
+              margin-top: 30px;
+              padding-bottom: 15px;
+              border-bottom: 1px solid #000;
+            "
+          >
+            <div>
+              <p style="margin: 0; font-family: var(--poppins-semibold);">
+                NO. <span class="short-line">@[License No.]</span>
+              </p>
+            </div>
+            <p style="margin: 0; font-family: var(--poppins-semibold);">
+              DATED: 
+              <span class="short-line" style="width: 130px"> @[certificateDate]</span>
+            </p>
+          </div>
+          <p style="margin: 15px 0 30px; font-family: var(--poppins-semibold);">
+            MR. <span class="short-line">@[First Name] @[Last Name]</span>
+          </p>
+
+          <div style="display: flex; gap: 10px">
+            <p style="margin-top: 0px;">SUBJECT:</p>
+            <p style="font-weight: 600; text-decoration: underline; text-transform: uppercase;margin-top: 0px;">
+              TEMPORARY PERMISSION ACCORDED TO MR. @[First Name] @[Last Name] FOR ORGANIZING
+              @[Organizing Day] WEEKLY BACHAT BAZAR AT @[Bachat Bazar Address] WITH @[District].          
+            </p>
+          </div>
+          <div>
+            <p style="text-align: justify; text-indent: 150px; line-height: 24px; font-weight: 400;">
+              With reference to your application Dated <span class="short-line">@[certificateDate]</span> and on satisfactory report from the concerned officer, temporary permission is hereby accorded to Mr. @[First Name] @[Last Name] for organizing @[Organizing Day] weekly Bachat Bazar at Address With District. Subsequent to submission of challan bearing serial No. <span class="short-line">@[Serial No.]</span> of Book No. <span class="short-line">@[Book No.]</span> on the following terms and conditions.
+            </p>
+            <p style="font-weight: 700;">The Organizer Shall:</p>
+          </div>
+          <div style="padding-left: 100px;">
+            <p style="line-height: 24px; margin:0px; margin-bottom:8px; font-weight: 400;">
+              • NOC obtain from Deputy Commissioner District <span class="short-line">@[NOC obtain from Deputy Commissioner District]</span>.
+            </p>
+            <p style="line-height: 24px; margin:0px; margin-bottom:8px; font-weight: 400;">
+              • NOC obtain from Senior Superintendent of Police District <span class="short-line">@[NOC obtain from Senior Superintendent of Police District]</span>.
+            </p>
+            <p style="line-height: 24px; margin:0px; margin-bottom:8px; font-weight: 400;">
+              • NOC obtain from Director General Bureau of Supply & Prices GOS.
+            </p>
+            <p style="line-height: 24px; margin:0px; margin-bottom:8px; font-weight: 400;">
+              • Provide all necessary assistance to the officer/official of E&IP department during their visit/Inspection of Bazar.
+            </p>
+            <p style="line-height: 24px; margin:0px; margin-bottom:8px; font-weight: 400;">
+              • Remain Present in Bazar during business hours.
+            </p>
+            <p style="line-height: 24px; margin:0px; margin-bottom:8px; font-weight: 400;">
+              • KMC has the rights to cancel above permission without assigning any reason thereof.
+            </p>
+          </div>
+          <p style="line-height: 24px; font-weight: 700;margin-bottom: 0px;">Note: This permission is accorded for organizing above Bachat Bazar for the @[Period to] to @[Period from]</p>
+          <div style="display: flex; justify-content: end; padding-right: 50px;padding-top: 0px;">
+            <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+
+              <img src="logos/signature.png"  alt="">
+             <p style="font-size: 14px; margin-top: 0px;text-align: center;margin-left: 20px;margin-bottom: 0px;">
+               SENIOR DIRECTOR<br>
+               ENTERPRISE & INVESTMENT PROMOTION<br>
+               KARACHI METROPOLITAN CORPORATION
+             </p>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: end;
+              position: absolute;
+              bottom: 25px;
+              left: 30px;
+              width: calc(100% - 60px);
+            "
+          >
+            <div style="width: 65%;">
+              <p style="font-size: 13px; margin-top: 0px; margin-bottom: 0px;text-transform: uppercase;">
+                <span style="font-size: 13px;text-decoration: underline;">A Copy is forwarded to:</span><br>
+                • The Deputy Commissioner District <span class="short-line">@[NOC obtain from Deputy Commissioner District]</span>.<br>
+                • The Senior Superintendent of Police District <span class="short-line">@[NOC obtain from Senior Superintendent of Police District]</span>.<br>
+                • The Director Bureau of Supply & Prices Government of Sindh, Karachi.<br>
+                • The Secretary to Mayor, Karachi.<br>
+                • P.S to Municipal Commissioner, KMC.<br>
+                • Office file.
+              </p>
+            </div>
+            <div style="width: 35%;display: flex; align-items: center; justify-content: end;">
+              
+              <img src="logos/image 1.png" width="79px" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -13,7 +13,7 @@
       }
       .container {
         position: absolute;
-        background-image: url(logos/border.png);
+        background-image: url(@[assetImgPath]/images/border.png);
         width: 99%;
         height: 99%;
         min-height: 900px;
@@ -26,6 +26,7 @@
         top: 30%;
         left: 23%;
         z-index: -1;
+        opacity: .1;
       }
       .center {
         text-align: center;
@@ -75,7 +76,7 @@
     <div class="container">
       <div class="content">
         <img
-          src="logos/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          src="@[assetImgPath]/images/KMC-watermark.png"
           alt=""
           class="background-img"
         />
@@ -83,7 +84,8 @@
           class=""
           style="padding-top: 30px; padding-inline: 35px; padding-bottom: 0px"
         >
-          <div style="display: flex; align-items: center; gap: 10px">
+          <div style="display: flex; align-items: center;">
+            <img src="@[assetImgPath]/images/kmc-logo.png" width="110px" alt="" />
             <h1
               class="center"
               style="
@@ -91,7 +93,7 @@
                 text-transform: uppercase;
                 font-weight: 700;
                 margin-bottom: 5px;
-                margin: auto;
+                margin-left: 60px;
                 margin-top: 20px;
               "
             >
@@ -121,12 +123,12 @@
             "
           >
             <p style="margin: 0">
-              License No.:<span class="short-line">&nbsp;</span> <br />
-              Mr./Ms.:<span class="short-line">&nbsp;</span>
+              License No.:<span class="short-line">@[License No.]</span> <br />
+              Mr./Ms.:<span class="short-line">@[First Name] @[Last Name]</span>
             </p>
             <p style="margin: 0">
               Dated
-              <span class="short-line" style="width: 130px"> &nbsp;</span>
+              <span class="short-line" style="width: 130px">@[certificateDate]</span>
             </p>
           </div>
           <div style="display: flex; gap: 5px">
@@ -138,24 +140,27 @@
           <div>
             <p style="margin-bottom: 20px">
               With reference to your application dated
-              <span class="short-line">&nbsp;</span> , Temporary Permission /
+              <span class="short-line">@[certificateDate]</span> , Temporary Permission /
               NOC is hereby granted in favour of Mr./Ms.
-              <span class="short-line">&nbsp;</span> S/o, D/o, W/o
-              <span class="short-line">&nbsp;</span> to temporarily place
+              <span class="short-line">@[First Name] @[Last Name]</span> S/o, D/o, W/o
+              <span class="short-line">@[Father Name]</span> to temporarily place
               building/construction materials on the road/roadside during the
               course of construction work, as per details given below.
             </p>
             <p>
-              Purpose: Temporary power backup <br />Generator Details: Type<span
+              Purpose: @[Purpose] <br />Generator Details: Type<span
                 class="short-line"
-                >&nbsp;</span
+                >@[Type]</span
               >
-              / Capacity<span class="short-line">&nbsp;</span> KVA /
-              Quantity<span class="short-line">&nbsp;</span> <br />Location of
-              Installation: <br />Duration: From<span class="short-line"
-                >&nbsp;</span
+              / Capacity<span class="short-line">@[Capacity]</span> KVA /
+              Quantity<span class="short-line">@[Quantity]</span> <br />Location of
+              Installation:<span class="short-line">@[Location of
+              Installation]</span> 
+              
+              <br />Duration: From<span class="short-line"
+                >@[Duration from]</span
               >
-              to<span class="short-line">&nbsp;</span>
+              to<span class="short-line">@[Duration to]</span>
             </p>
 
             <p
@@ -248,10 +253,10 @@
               <br />
               This is a system-generated certificate and does not require a
               signature. <br />
-              Print Date:<span class="short-line">&nbsp;</span>
+              Print Date:<span class="short-line">@[certificateDate]</span>
             </p>
             <div>
-              <img src="logos/image 1.png" width="60px" alt="" />
+              <img src="@[qrImagePath]" width="60px" alt="" />
             </div>
           </div>
         </div>

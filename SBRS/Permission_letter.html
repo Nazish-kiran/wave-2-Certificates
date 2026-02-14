@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 700;
+      }
+      /* @[assetImgPath]/images/ */
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 4px;
+      }
+      .container-next-page {
+        top: 101vh;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 28rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0.3;
+      }
+
+      .center {
+        text-align: center;
+        width: 100%;
+      }
+
+      .short-line {
+        display: inline;
+        border-bottom: 1px solid black;
+        width: auto;
+      }
+
+      p,
+      span,
+      li {
+        font-size: 14px;
+        font-weight: normal;
+      }
+
+      td {
+        font-size: 13px;
+        vertical-align: middle;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 8px 10px;
+        /* text-align: center; */
+      }
+
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          class="background-img"
+        />
+
+        <div style="padding-top: 30px; padding-inline: 35px">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <img src="@[assetImgPath]/images/Group 68.png" width="110" alt="" />
+
+            <div style="text-align: center">
+              <div
+                style="font-size: 20px; line-height: 30px; line-height: 20px"
+              >
+                <span
+                  style="
+                    font-weight: 600;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                  "
+                >
+                  OFFICE OF THE DEPUTY COMMISSIONER<br />DISTRICT
+                  <span class="short-line">&nbsp;</span> KARACHI</span
+                >
+              </div>
+            </div>
+            <div style="width: 110px"></div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: start;
+              margin-top: 30px;
+              padding-bottom: 10px;
+            "
+          >
+            <div>
+              <p style="margin: 0; font-family: var(--poppins-semibold)">
+                No.<span class="short-line">@[Registry Number]</span>
+              </p>
+            </div>
+            <p style="margin: 0; font-family: var(--poppins-semibold)">
+              Date:
+              <span class="short-line" style="width: 130px"
+                >@[certificateDate]</span
+              >
+            </p>
+          </div>
+          <div>
+            <p
+              style="
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                text-align: center;
+              "
+            >
+              NO OBJECTION CERTIFICATE
+            </p>
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                text-align: center;
+              "
+            >
+              PERMISSION FOR UTILIZATION OF EXTRA SPACE
+            </p>
+          </div>
+          <p style="font-weight: 600; font-size: 15px; margin-bottom: 5px">
+            Applicant Details
+          </p>
+          <p
+            style="
+              margin: 10px 0 10px;
+              font-family: var(--poppins-semibold);
+              display: flex;
+            "
+          >
+            <span style="width: 20%; display: inline-block; font-weight: bold"
+              >Fields:</span
+            >
+            <span style="width: 30%; display: inline-block; font-weight: bold"
+              >Details</span
+            >
+          </p>
+          <p style="margin: 10px 0 10px; font-family: var(--poppins-semibold)">
+            <span style="width: 20%; display: inline-block"
+              >Applicant Name</span
+            >
+            <span class="short-line" style="width: 30%; display: inline-block"
+              >@[First Name] @[Last Name]</span
+            >
+          </p>
+          <p style="margin: 0 0 10px; font-family: var(--poppins-semibold)">
+            <span style="width: 20%; display: inline-block">Business Name</span>
+            <span class="short-line" style="width: 30%; display: inline-block"
+              >@[Hotel/ Shop Name]</span
+            >
+          </p>
+          <p style="margin: 0 0 10px; font-family: var(--poppins-semibold)">
+            <span style="width: 20%; display: inline-block">Shop Address</span>
+            <span class="short-line" style="width: 30%; display: inline-block"
+              >@[Complete Business Address]</span
+            >
+          </p>
+          <p style="margin: 0 0 10px; font-family: var(--poppins-semibold)">
+            <span style="width: 20%; display: inline-block"
+              >Union Council / Area</span
+            >
+            <span class="short-line" style="width: 30%; display: inline-block"
+              >@[Sub Division]</span
+            >
+          </p>
+
+          <div style="border-top: 1px solid #000">
+            <p style="font-weight: 600; font-size: 15px; margin-bottom: 5px">
+              Purpose of NOC:
+            </p>
+            <p style="font-weight: 400; margin-top: 0; margin-bottom: 0px">
+              The applicant requests permission to utilize
+              <b>additional space in front of the shop</b> for placing
+              <b>customer seating arrangements,</b> including:<br />
+            </p>
+            <ul style="padding-left: 25px; margin: 0">
+              <li>Chairs <span class="short-line">@[Chairs]</span></li>
+              <li>Tables <span class="short-line">@[Tables]</span></li>
+              <li>Takht / Charpoys <span class="short-line">@[Takht]</span></li>
+              <li>Other <span class="short-line">@[Other]</span></li>
+            </ul>
+          </div>
+
+          <p style="font-weight: 600; font-size: 20px; margin-bottom: 5px">
+            Final Decision:
+          </p>
+          <p>
+            <span class="short-line"
+              >@[Permission Granted] @[Permission Not Granted]</span
+            >
+          </p>
+
+          <div>
+            <p style="font-weight: 600; font-size: 15px; margin-bottom: 5px">
+              Terms & Conditions:
+            </p>
+            <ol style="padding-left: 25px; margin: 0">
+              <li>
+                Seating arrangement must not obstruct pedestrian pathways or
+                traffic flow.
+              </li>
+              <li>
+                All municipal, safety, and sanitation regulations must be
+                strictly observed.
+              </li>
+              <li>Extra space shall be used only during business hours.</li>
+              <li>The area must be maintained clean and safe at all times.</li>
+              <li>
+                Validity of this NOC is
+                <span class="short-line">@[Validity of NOC]</span> from the date
+                of issuance.
+              </li>
+              <li>
+                Any further instructions issued by the Deputy Commissioner or
+                concerned authorities must be complied with.
+              </li>
+            </ol>
+          </div>
+          <p style="font-weight: 600; font-size: 15px; margin-bottom: 5px">
+            Official Authorization:
+          </p>
+          <div style="display: flex; align-items: center;">
+            <div>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 13px;
+                  margin: 0px;
+                  margin-bottom: 5px;
+                "
+              >
+                Deputy Commissioner <span class="short-line">&nbsp;</span>,
+                Karachi
+              </p>
+            </div>
+            <div>
+              <p
+                style="
+                  text-transform: uppercase;
+                  text-align: center;
+                  font-size: 13px;
+                "
+              >
+                <img
+                  src="@[signatureImgPath]"
+                  alt="aq"
+                  class="signature"
+                  style="height: 80px; margin-left: 30px; margin-top: -90px"
+                />
+              </p>
+              <p
+                style="
+                  font-weight: 600;
+                  font-size: 13px;
+                  margin: 0px;
+                  margin-bottom: 5px;
+                  border-top: 1px solid #000;
+                  text-align: center;
+                "
+              >
+                Signature
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: end;
+              justify-content: space-between;
+              position: absolute;
+              align-items: center;
+              bottom: 30px;
+              left: 30px;
+              right: 30px;
+            "
+          >
+            <div>
+              <img src="logos/image 1.png" width="80px" alt="" /> <br />
+              <span>For Verification</span>
+            </div>
+            <p
+              style="
+                font-weight: 400;
+                font-size: 13px;
+                margin: 0px;
+                padding: 0px 50px;
+              "
+            >
+              <b> Note: </b>
+              This NOC is issued under the authority of the District
+              Administration, Central Karachi and is subject to compliance with
+              all applicable rules and regulations.
+            </p>
+            <img src="logos/image 1.png" width="80px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- @[qrImagePath] -->
