@@ -44,7 +44,7 @@
       }
 
       .short-line {
-        display: inline-block;
+        display: inline;
         box-sizing: border-box;
         border-bottom: 1px solid black;
         width: auto;
@@ -85,8 +85,12 @@
         />
         <div class="" style="padding: 30px 35px 0px 35px">
           <div class="top-content">
-            <div style="display: flex; align-items: center; gap: 30px">
-              <img src="@[assetImgPath]/images/ETNC-logo.png" alt="" style="width: 103px;margin-left: 17px;" />
+            <div style="display: flex; align-items: center; gap: 100px">
+              <img
+                src="@[assetImgPath]/images/ETNC-logo.png"
+                alt=""
+                style="width: 103px; margin-left: 17px"
+              />
               <div>
                 <h1
                   class="center"
@@ -97,8 +101,7 @@
                     margin-bottom: 5px;
                   "
                 >
-                  Excise, Taxation and Narcotics <br />
-                  Control Department
+                  Department of Sindh
                 </h1>
                 <p
                   class="center"
@@ -106,10 +109,24 @@
                     font-size: 16px;
                     font-weight: 600;
                     text-transform: uppercase;
-                    margin-top: 0px;
+                    margin: 0px;
                   "
                 >
-                  Motor Vehicle Dealer License
+                  Excise And Taxation Department <br />
+                  Demand Notice
+                </p>
+                <p
+                  class="center"
+                  style="
+                    font-size: 13px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin: 0px;
+                    margin-top: 5px;
+                  "
+                >
+                  Form PCT-9 <br />
+                  See rule 13 (1)
                 </p>
               </div>
             </div>
@@ -123,29 +140,41 @@
               "
             >
               <p style="margin: 0">
-                License No.
-                <span class="short-line">@[License No]</span>
+                Demand Notice No.
+                <span class="short-line">&nbsp;</span>
               </p>
               <p style="margin: 0">
-                Dated
+                Dated:
                 <span class="short-line">@[Current Date]</span>
               </p>
             </div>
-
-            <p style="margin-top: 60px; text-align: justify; line-height: 21px">
-              License is hereby granted to<span class="short-line">
-                @[Name of Owner]</span
-              >
-              at his approved premises situated at<span class="short-line">
-                @[Postal Address]</span
-              >
-              holding<span class="short-line">@[NTN No]</span>NTN No.
+            <p>To:</p>
+            <p>M/s <span class="short-line">@[First Name] @[Last Name]</span></p>
+            <p>Name of Business<span class="short-line">&nbsp;</span></p>
+            <p>Address<span class="short-line">@[Postal Address]</span></p>
+            <p style="text-align: justify; line-height: 21px">
+              Please take notice that you are liable to pay the tax on
+              Profession Calling, Trade and Employment as under:
             </p>
+            <div style="display: flex; gap: 120px">
+              <p>1. Current Tax for the Year (YYYY)</p>
+              <p>Rs.<span class="short-line">@[Current Tax for the Year]</span></p>
+            </div>
+            <div style="display: flex; gap: 155px">
+              <p style="margin: 0px;">2. Arrears for the Year (YYYY)</p>
+              <p style="margin: 0px;">Rs.<span class="short-line">@[Arrears for the Year]</span></p>
+            </div>
+            <div style="display: flex; gap: 145px">
+              <p style="width: 250px"></p>
+              <p>Total Rs.<span class="short-line">@[Total Rs]</span></p>
+            </div>
             <p
-              style="margin-top: 120px; text-align: justify; line-height: 21px"
+              style="margin-top: 50px; text-align: justify; line-height: 21px"
             >
-              This License is valid for<span class="short-line">@[valid for]</span>
-              TO<span class="short-line">@[valid to]</span>
+              A challan is generated. You should please deposit the set amount
+              by the last date shown in challan i.e.,<span class="short-line"
+                >&nbsp;</span
+              >
             </p>
           </div>
           <div

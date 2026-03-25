@@ -21,7 +21,7 @@
         background-size: cover;
         left: 5px;
       }
-     .background-img {
+      .background-img {
         position: absolute;
         height: 40rem;
         top: 50%;
@@ -44,7 +44,7 @@
       }
 
       .short-line {
-        display: inline-block;
+        display: inline;
         box-sizing: border-box;
         border-bottom: 1px solid black;
         width: auto;
@@ -78,15 +78,15 @@
   <body>
     <div class="container">
       <div class="content">
-        <img
-          src="@[assetImgPath]/images/ETNC watermark.png"
-          alt=""
-          class="background-img"
-        />
+        <img src="@[assetImgPath]/images/ETNC watermark.png" alt="" class="background-img" />
         <div class="" style="padding: 30px 35px 0px 35px">
           <div class="top-content">
-            <div style="display: flex; align-items: center; gap: 30px">
-              <img src="@[assetImgPath]/images/ETNC-logo.png" alt="" style="width: 103px;margin-left: 17px;" />
+            <div style="display: flex; align-items: center; gap: 100px">
+              <img
+                src="@[assetImgPath]/images/ETNC-logo.png"
+                alt=""
+                style="width: 103px; margin-left: 17px"
+              />
               <div>
                 <h1
                   class="center"
@@ -97,8 +97,7 @@
                     margin-bottom: 5px;
                   "
                 >
-                  Excise, Taxation and Narcotics <br />
-                  Control Department
+                  Department of Sindh
                 </h1>
                 <p
                   class="center"
@@ -109,7 +108,8 @@
                     margin-top: 0px;
                   "
                 >
-                  Motor Vehicle Dealer License
+                  Excise And Taxation Department <br />
+                  Reminder Notice
                 </p>
               </div>
             </div>
@@ -123,30 +123,51 @@
               "
             >
               <p style="margin: 0">
-                License No.
+                No.
                 <span class="short-line">@[License No]</span>
               </p>
               <p style="margin: 0">
-                Dated
+                Dated:
                 <span class="short-line">@[Current Date]</span>
               </p>
             </div>
-
-            <p style="margin-top: 60px; text-align: justify; line-height: 21px">
-              License is hereby granted to<span class="short-line">
-                @[Name of Owner]</span
-              >
-              at his approved premises situated at<span class="short-line">
-                @[Postal Address]</span
-              >
-              holding<span class="short-line">@[NTN No]</span>NTN No.
-            </p>
+            <p>To M/s<span class="short-line">@[First Name] @[Last Name]</span></p>
             <p
-              style="margin-top: 120px; text-align: justify; line-height: 21px"
+              class="center"
+              style="font-weight: 600; text-decoration: underline"
             >
-              This License is valid for<span class="short-line">@[valid for]</span>
-              TO<span class="short-line">@[valid to]</span>
+              Payment of Tax on, Trades, Profession, Callings and <br />
+              Employment for the Current Year and Arrears.
             </p>
+            <p>
+              Reference: This Office Letter No. ETO/P-I /PROF. TAX/ Dated:
+              <span class="short-line" style="border-bottom: 1px dashed black"
+                >&nbsp;</span
+              >
+              Please refer to above cited letter in the captioned subject and
+              whereas, you were asked to furnish the declaration in Form PCT-3
+              (Declaration Form) along with the required documents, but you have
+              failed to submit the requisite documents.
+            </p>
+            <p style="margin-top: 40px; margin-bottom: 0px">
+              You or your authorized representative is once again requested to
+              submit the requisite following documents to avoid any legal
+              proceedings under Arrears of Land Revenue Act, 1976 & Sindh Tax
+              Evasion (Punishment) Act, 1974. Within 7 days, from the receipt of
+              this letter.
+            </p>
+            <ol style="padding-left: 22px;margin-top: 5px;">
+              <li>Certificate of Incorporation.</li>
+              <li>Audited Balance Sheet.</li>
+              <li>Copy of Las Paid Challan.</li>
+              <li>Copy of NTN Certificate.</li>
+              <li>Copy of Income Tax Returns.</li>
+              <li>
+                Complete List of Vendor / Contractor / Suppliers with Complete
+                Address. Your cooperation highly appreciated in this regard.
+              </li>
+            </ol>
+            <p style="margin-top: 70px;">Your cooperation highly appreciated in this regard.</p>
           </div>
           <div
             style="
