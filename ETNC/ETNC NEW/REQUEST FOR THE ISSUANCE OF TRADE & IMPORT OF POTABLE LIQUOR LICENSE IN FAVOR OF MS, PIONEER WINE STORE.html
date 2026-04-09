@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: var(--poppins-semibold);
+      }
+      /* @[assetImgPath] */
+      :root {
+        --poppins-semibold: "poppins-semibold", sans-serif;
+      }
+      /* logos/ */
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 40rem;
+        top: 20%;
+        left: 7%;
+        z-index: -1;
+        opacity: 0.6;
+      }
+      .center {
+        text-align: center;
+      }
+      .long-line {
+        display: inline-block;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: 200px;
+        padding-left: 5px;
+        word-wrap: break-word;
+        margin-bottom: 10px;
+        translate: 0px -5px;
+      }
+
+      .short-line {
+        display: inline;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: auto;
+        word-wrap: break-word;
+        translate: 0px -5px;
+      }
+      .head-info span {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 9.5px;
+      }
+      .head-info {
+        margin-bottom: 15px;
+      }
+      .head-info div {
+        line-height: 12.8px;
+      }
+      p,
+      span,
+      li {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/ETNC watermark.png"
+          alt=""
+          class="background-img"/>
+        <div class="" style="padding: 30px 35px 0px 35px">
+          <div style="display: flex; gap: 30px; align-items: flex-start">
+            <img
+              src="@[assetImgPath]/images/ETNC-logo.png"
+              alt=""
+              style="width: 103px; margin-left: 17px; margin-top: 10px"/>
+            <div>
+              <h1
+                class="center"
+                style="
+                  font-size: 17px;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  margin-bottom: 5px;
+                  font-family: &quot;Times New Roman&quot;, Times, serif;
+                  text-decoration: underline;
+                  line-height: 26px;
+                ">
+                DIRECTOR GENERAL, <br />EXCISE, TAXATION & NARCOTICS CONTROL
+                SINDH <br />
+                (City).
+              </h1>
+              <p class="center" style="margin-top: 0px">
+                Address<span class="short-line">&nbsp;</span>
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 10px;
+            ">
+            <p style="margin: 0">
+              No.
+              <span class="short-line">&nbsp;</span>
+            </p>
+            <p style="margin: 0">
+              Date:
+              <span class="short-line">@[Current Date]</span>
+            </p>
+          </div>
+          <p style="margin-bottom: 0px">To:</p>
+          <div style="display: flex; gap: 83px">
+            <p style="margin-top: 0px"></p>
+            <p style="margin-top: 0px">
+              The Director (Excise & Taxation)(Excise),<br />Excise, Taxation &
+              Narcotics Control Department,<br />(City).
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px">
+            <p
+              style="
+                margin-top: 0px;
+                font-weight: 600;
+                text-decoration: underline;
+              ">
+              SUBJECT:
+            </p>
+            <p
+              style="
+                margin-top: 0px;
+                font-weight: 600;
+                text-decoration: underline;
+              ">
+              REQUEST FOR THE ISSUANCE OF TRADE & IMPORT OF POTABLE LIQUOR
+              LICENSE IN <br />
+              FAVOR OF M/S, PIONEER WINE STORE
+            </p>
+          </div>
+          <p style="text-indent: 86px; margin-bottom: 0px; text-align: justify">
+            I am directed to refer on the subject noted above and to state that
+            the Competent Authority has been pleased to accord the Trade &
+            Import of Potable Liquor in favor of Mrs. Chandran W/o Bacha Ram
+            Proprietor of M/s Pioneer Wine Store in the same premises under
+            article 17 of the Prohibition (Enforcement of Hadd) Order, 1979
+            reads with rule 23 (1) of the Sindh Prohibition Rules, 1979.
+            <br />
+          </p>
+          <p style="text-indent: 86px; margin-top: 0px; text-align: justify">
+            You are further advised to recover the prescribed fee for the Trade
+            & Import of Potable Liquor and forward the same (in triplicate) duly
+            filled in and initialed for the token of its correctness for the
+            signature of the Director General (Excise & Taxation) Sindh Karachi.
+          </p>
+          <div style="display: flex; justify-content: flex-end">
+            <p style="font-weight: 600" class="center">
+              (DARA GHANI MEMON) <br>DEPUTY DIRECTOR (HQ)<br>for DIRECTOR GENERAL (EXCISE & TAXATION)<br>EXCISE, TAXATION & NARCOTICS CONTROL SINDH (City)
+            </p>
+          </div>
+          <p style="margin-top: 0px; text-align: justify;">
+           1. The Secretary to Govt. of Sindh, Excise, Taxation & Narcotics Control Department with reference to Note for Minister, Excise, Taxation & Narcotics Control Sindh, Excise, Taxation & Narcotics Control dated <span class="short-line">&nbsp;</span>. <br> 2. The PS to Minister ET&NC for kind information of Minister Excise, Taxation & Narcotics Control Sindh with reference to Note for Minister, Excise, Taxation & Narcotics Control Sindh, Excise, Taxation & Narcotics Control dated <span class="short-line">&nbsp;</span>.<br>3. Mrs. Chandran W/o Bacha Ram Proprietor of M/s Pioneer Wine Store
+          </p>
+          <div style="display: flex; justify-content: flex-end">
+            <p style="font-weight: 600" class="center">
+              (DARA GHANI MEMON) <br>DEPUTY DIRECTOR (HQ)<br>for DIRECTOR GENERAL (EXCISE & TAXATION)<br>EXCISE, TAXATION & NARCOTICS CONTROL SINDH (City)
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              gap: 30px;
+              position: absolute;
+              width: 98%;
+              bottom: 30px;
+              right: 35px;
+            ">
+            <img src="@[qrImagePath]" width="80px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
