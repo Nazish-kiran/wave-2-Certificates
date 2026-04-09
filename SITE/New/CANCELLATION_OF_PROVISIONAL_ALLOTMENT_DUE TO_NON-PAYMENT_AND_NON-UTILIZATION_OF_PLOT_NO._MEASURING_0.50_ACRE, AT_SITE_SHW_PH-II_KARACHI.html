@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      /* logos/ */
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 4px;
+      }
+      .container-next-page {
+        top: 101vh;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 28rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0.3;
+      }
+
+      .center {
+        text-align: center;
+      }
+      .long-line {
+        display: inline-block;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: auto;
+        word-wrap: break-word;
+        margin-bottom: 10px;
+        translate: 0px -5px;
+      }
+
+      .short-line {
+        display: inline;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        width: auto;
+        word-wrap: break-word;
+        translate: 0px -3px;
+      }
+      .head-info span {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 9.5px;
+      }
+      .head-info {
+        margin-bottom: 15px;
+      }
+      .head-info div {
+        line-height: 12.8px;
+      }
+      p,
+      span,
+      li {
+        font-size: 13px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 30px; padding-inline: 35px; padding-bottom: 0px"
+        >
+          <div class="top-content" style="padding-inline: 20px">
+            <h1 class="center" style="font-size: 28.4px">
+              Sindh Industrial Trading Estates Limited
+            </h1>
+            <p class="center" style="font-size: 18px; font-weight: 700">
+              Manghopir Road, Karachi-75700
+            </p>
+            <div
+              class="head-info"
+              style="display: flex; justify-content: space-between"
+            >
+              <div
+                style="
+                  display: flex;
+                  gap: 20px;
+                  font-style: italic;
+                  text-transform: uppercase;
+                "
+              >
+                <div>
+                  <span>Managing Director</span><br />
+                  <span>Secretary</span><br />
+                  <span>Director Finance</span><br />
+                  <span>CHIEF ENGINEER</span><br />
+                  <span>ADMIN OFFICER</span><br />
+                  <span>P.A & X.</span><br />
+                  <span>FAX NO</span>
+                </div>
+                <div>
+                  <span>:2861214-5</span><br />
+                  <span>:2360605</span><br />
+                  <span>:2579340</span><br />
+                  <span>:2579190</span><br />
+                  <span>:2579191</span><br />
+                  <span>:2566213</span><br />
+                  <span>:2566213</span>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="@[assetImgPath]/images/SITE logo.svg"
+                  alt=""
+                  style="height: 110px; translate: -5px 20px"
+                />
+                <p style="margin: 0; text-transform: uppercase">Offer Letter</p>
+              </div>
+              <div style="display: flex; gap: 20px; text-transform: uppercase">
+                <div>
+                  <span>Estate Engr. Hyd.</span><br />
+                  <span>Estate Engr. n kcy</span><br />
+                  <span>Estate Engr. N. Abad</span><br />
+                  <span>Estate Engr. Kotri</span><br />
+                  <span>Estate Engr. Sukkur</span> <br />
+                  <span>Estate Engr. N Shah</span><br />
+                </div>
+                <div>
+                  <span>: 021-880789-41351</span><br />
+                  <span>: 6934608</span><br />
+                  <span>: 0221 2669262</span><br />
+                  <span>: 0221 870008-870007</span><br />
+                  <span>: 021 39362</span> <br />
+                  <span>: 0241 60878</span>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <p style="margin: 0; font-style: italic">
+                Ref No
+                <span class="short-line">@[Reference No.]</span>
+              </p>
+              <p style="margin: 0; font-style: italic">
+                Date
+                <span class="short-line">@[CurrentDate]</span>
+              </p>
+            </div>
+            <div style="padding-top: 20px; width: 100%">
+              <p style="margin: 0px; line-height: 22px">
+                <span style="font-weight: 700">
+                  M/s. @[First Name] @[Last Name]
+                </span>
+                <br />
+                R/o.
+                <span class="short-line" style="translate: 0px -5px">
+                  @[R/o]
+                </span>
+                <br />
+                <span>@[Estates] </span>
+              </p>
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 29px;
+                align-items: flex-start;
+                margin-top: 10px;
+              "
+            >
+              <p style="font-weight: 600">SUBJECT:-</p>
+              <p
+                style="
+                  text-decoration: underline;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                "
+              >
+                ALLOTMENT OF LAND FOR INDUSTRIAL PURPOSE AT SITE SUPER HIGHWAY
+                PH-1
+              </p>
+            </div>
+            <p style="margin-top: 0px; text-align: justify">
+              <span style="margin-right: 20px">Reference:</span> Your letter
+              dated: <span class="short-line">@[Letter Date]</span>,
+            </p>
+            <p style="margin-top: 0px">Dear Sirs,</p>
+            <p style="margin-top: 0px; text-align: justify; text-indent: 30px">
+              I am directed to inform you that the balloting for allocation of
+              plots has been finalized on 11 June 2002 at SITE Super Highway
+              Office North Karachi, which was inaugurated by Honorable Governor
+              of Sindh Mr. Mohammadmain Soomro.
+            </p>
+            <p style="margin-top: 0px; text-align: justify; text-indent: 30px">
+              The Allotment Committee, constituted by our Board of Directors, in
+              its meeting held on 6th April 2002 decided to provisionally allot
+              you a piece of land measuring 0.5 acre, Plot No.
+              <span class="short-line">@[Letter Date]</span> at SITE Super
+              Highway Phase-II, Karachi, for setting up unit
+              <span class="short-line">@[Letter Date]</span> at a premium of Rs.
+              15,00,000/- (Rupees Fifteen Lac only) per acre and Rs.3,250/-
+              (Rupees Three Thousand Two Hundred Fifty only) per acre per annum
+              as license fee subject to your compliance of the following terms
+              and conditions:
+            </p>
+            <p style="margin-top: 0px">@[Terms and condition]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="top: 101vh">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt=""
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 30px; padding-inline: 35px; padding-bottom: 0px"
+        >
+          <div class="top-content" style="padding-inline: 20px">
+            <div>
+              <div style="display: flex; justify-content: end">
+                <p
+                  style="
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 75px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: fit-content;
+                    margin-right: 100px;
+                  "
+                >
+                  <img
+                    src="@[signatureImgPath]"
+                    width="80px"
+                    style="margin-bottom: 10px"
+                    alt=""
+                  />
+                  <br />
+                  SECRETARY
+                </p>
+              </div>
+              <p>
+                Copy to: <br /> <br>
+                The Director Finance SITE Ltd Karachi. <br />
+                The Estate Engineer, SITE SHW, PH-II, Karachi. <br />
+                The P.S to Managing Director SITE Ltd Karachi.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  align-items: flex-end;
+                  margin-top: 15px;
+                "
+              >
+                <div>
+                  <img src="@[qrImagePath]" width="79px" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
