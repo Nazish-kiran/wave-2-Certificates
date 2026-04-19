@@ -39,7 +39,7 @@
         font-weight: 700;
       }
       .body-txt p {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
       }
       @page {
         size: a4 landscape;
@@ -84,7 +84,7 @@
             </h1>
           </div>
           <div style="display: flex; gap: 40px; margin-top: 30px">
-            <div style="display: flex; margin-top: 45px; margin-left: 40px;">
+            <div style="display: flex; margin-top: 45px;margin-left: 40px;">
               <!-- <p style="translate: 85% -20%; rotate: 270deg; font-size: 19px">
                 Serial No: MC1162062
               </p> -->
@@ -93,9 +93,13 @@
                   display: flex;
                   flex-direction: column;
                   justify-content: space-between;
+                  align-items: center;
                 ">
-                <img src="Images/chip.png" alt="" />
+                <img src="Images/chip.png" alt="" style="width: 150px;" />
                 <p class="center" style="font-size: 19px">
+                  <span style="text-decoration: underline;">
+                         @[registrationNumber]
+                    </span> <br>
                   Registering <br />
                   Authority
                 </p>
@@ -107,7 +111,7 @@
               <p>CNIC/Passport/NTN: @[ownerCNIC] @[ownerNTN] @[ownerPassport]</p>
               <p>HPA: @[hpaBankName]</p>
               <p>Date of Reg: @[registrationDate]</p>
-              <p style="margin-bottom: 90px">Address: @[ownerAddress]</p>
+              <p style="margin-bottom: 120px">Address: @[ownerAddress]</p>
             </div>
           </div>
           <img
@@ -120,8 +124,8 @@
     <div class="container" style="position: absolute; top: 101vh">
       <div class="content">
         <div class="" style="padding: 30px 0px 0px 0px">
-          <div class="body-txt" style="margin-left: 40px; margin-top: 70px">
-             <p>Chassis No: @[chassisNumber]</p>
+          <div class="body-txt" style="margin-left: 40px; margin-top: 70px;">
+            <p>Chassis No: @[chassisNumber]</p>
             <p>Engine No: @[engineNumber]</p>
             <p>Make & Model: @[manufacturerName / modelName]</p>
             <p>Year of Manufacture: @[manufacturingYear]</p>
@@ -130,9 +134,9 @@
             <p>Seating Capacity: @[numberOfSeats]</p>
             <p>Regd. Laden Weight: @[ladenWeight]</p>
           </div>
-           <p class="center" style="font-size: 19px;">**This card is digital card signature is not applicable here**</p>
-          <div style="position: absolute; bottom: 85px; right: 20px">
-            <img src="Images/qrcode.png" width="140px" alt="" />
+          <p class="center" style="font-size: 19px;">**This card is digital card signature is not applicable here**</p>
+          <div style="position: absolute; bottom: 85px; right: 20px;">
+            <img src="Images/qrcode.png" width="140px" alt="">
           </div>
           <img
             src="Images/border-bottom.png"

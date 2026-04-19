@@ -39,7 +39,7 @@
         font-weight: 700;
       }
       .body-txt p {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
       }
       @page {
         size: a4 landscape;
@@ -93,9 +93,13 @@
                   display: flex;
                   flex-direction: column;
                   justify-content: space-between;
+                  align-items: center;
                 ">
-                <img src="Images/chip.png" alt="" />
+                <img src="Images/chip.png" alt="" style="width: 150px;" />
                 <p class="center" style="font-size: 19px">
+                  <span style="text-decoration: underline;">
+                         @[registrationNumber]
+                    </span> <br>
                   Registering <br />
                   Authority
                 </p>
@@ -107,7 +111,7 @@
               <p>CNIC/Passport/NTN: @[ownerCNIC] @[ownerNTN] @[ownerPassport]</p>
               <p>HPA: @[hpaBankName]</p>
               <p>Date of Reg: @[registrationDate]</p>
-              <p style="margin-bottom: 90px">Address: @[ownerAddress]</p>
+              <p style="margin-bottom: 120px">Address: @[ownerAddress]</p>
             </div>
           </div>
           <img
