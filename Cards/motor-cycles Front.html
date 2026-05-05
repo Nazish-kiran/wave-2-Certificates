@@ -7,15 +7,28 @@
         font-family: Arial, Helvetica, sans-serif;
       }
 
+      body{
+        margin: 20px;
+        padding: 0;
+      }
       /* logos/ */
-      .container {
-        position: absolute;
-        background-image: url(Images/card-bg.png);
-        width: 99%;
-        height: 99%;
-        min-height: 700px;
+      /* .container { */
+        /* background-image: url(Images/card-bg.png); */
+        /* width: 99%;
+        height: 50vh; */
+        /* min-height: 700px; */
+        /* background-size: contain;
+        left: 5px; */
+      /* } */
+      .card-front,
+      .card-back{
+        background-image: url(Images/card-bg.png); 
         background-size: cover;
-        left: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        box-sizing: border-box;
       }
       .center {
         text-align: center;
@@ -34,15 +47,12 @@
       p,
       span,
       li {
-        font-size: 22px;
-        line-height: 24px;
+        font-size: 10px;
+        line-height: 12px;
         font-weight: 700;
       }
-      .body-txt p {
-        margin-bottom: 40px;
-      }
       @page {
-        size: a4 landscape;
+        size: a4;
         margin: 0rem;
       }
     </style>
@@ -50,102 +60,118 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="" style="padding: 30px 0px 0px 0px">
-          <div style="display: flex; gap: 65px; align-items: center">
+        <div class="card-front" style="position: relative; border: 1px solid gray;">
+          <div style="display: flex; justify-content: space-between; align-items: center">
             <img
               src="Images/sindh-logo.png"
               alt=""
-              style="width: 105px; margin-left: 50px; margin-bottom: 20px"/>
+              style="
+                width: 50px;
+                margin-left: 20px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+              "
+            />
             <div>
               <h1
                 class="center"
                 style="
-                  font-size: 33px;
+                  font-size: 14px;
                   font-weight: 700;
-                  margin-bottom: 5px;
+                  margin: 5px 0px;
                   color: #14532d;
-                ">
+                "
+              >
                 Excise, Taxation & Narcotics Control Department <br />
                 Government of Sindh
               </h1>
             </div>
+            <div style="width: 50px;"></div>
           </div>
           <div
-            style="background-color: #2b855f; width: 100%; padding-block: 10px">
+            style="background-color: #2b855f; width: 100%; padding-block: 7px"
+          >
             <h1
               class="center"
               style="
-                font-size: 27px;
+                font-size: 12px;
                 font-weight: 700;
                 color: #fff;
                 margin: 0px;
-              ">
+              "
+            >
               Certificate of Registration (Form G)
             </h1>
           </div>
-          <div style="display: flex; gap: 40px; margin-top: 30px">
-            <div style="display: flex; margin-top: 45px;margin-left: 40px;">
-              <!-- <p style="translate: 85% -20%; rotate: 270deg; font-size: 19px">
-                Serial No: MC1162062
-              </p> -->
+          <div style="display: flex; gap: 60px; margin-top: 5px">
+            <div style="display: flex; margin-top: 30px; margin-left: 40px">
               <div
                 style="
                   display: flex;
                   flex-direction: column;
                   justify-content: space-between;
                   align-items: center;
-                ">
-                <img src="Images/chip.png" alt="" style="width: 150px;" />
-                <p class="center" style="font-size: 19px">
-                  <span style="text-decoration: underline;">
-                         @[registrationNumber]
-                    </span> <br>
-                  Registering <br />
-                  Authority
-                </p>
+                "
+              >
+                <img src="Images/chip.png" alt="" style="width: 50px" />
               </div>
             </div>
             <div class="body-txt">
-              <p>Owner's Name: @[ownerName]</p>
-              <p>F/H Name: @[ownerFathersName]</p>
-              <p>CNIC/Passport/NTN: @[ownerCNIC] @[ownerNTN] @[ownerPassport]</p>
-              <p>HPA: @[hpaBankName]</p>
-              <p>Date of Reg: @[registrationDate]</p>
-              <p style="margin-bottom: 120px">Address: @[ownerAddress]</p>
+              <p style="margin: 9px 0px">Owner's Name: @[ownerName]</p>
+              <p style="margin: 9px 0px">F/H Name: @[ownerFathersName]</p>
+              <p style="margin: 9px 0px">
+                CNIC/Passport/NTN: @[ownerCNIC] @[ownerNTN] @[ownerPassport]
+              </p>
+              <p style="margin: 9px 0px">HPA: @[hpaBankName]</p>
+              <p style="margin: 9px 0px">Date of Reg: @[registrationDate]</p>
+              <p style="margin: 9px 0px">Address: @[ownerAddress]</p>
             </div>
           </div>
-          <img
-            src="Images/border-bottom.png"
-            style="width: 100%; position: absolute; bottom: 0px"
-            alt=""/>
-        </div>
-      </div>
-    </div>
-    <div class="container" style="position: absolute; top: 101vh">
-      <div class="content">
-       <p class="center">
-            <span style="font-size: 24px;">
+          <p style="font-size: 10px; margin-left: 40px">
+            Registering Authority
+            <span
+              style="display: inline-block; margin-left: 50px; font-size: 10px"
+              class="center"
+            >
               @[registrationNumber]
             </span>
-            <br> @[ownerType]</p>
-          <div class="body-txt" style="margin-left: 40px;">
-            <p>Chassis No: @[chassisNumber]</p>
-            <p>Engine No: @[engineNumber]</p>
-            <p>Make & Model: @[manufacturerName / modelName]</p>
-            <p>Year of Manufacture: @[manufacturingYear]</p>
-            <p>Engine Capacity: @[engineCapacity]</p>
-            <p>Colour: @[color]</p>
-            <p>Seating Capacity: @[numberOfSeats]</p>
-            <p>Regd. Laden Weight: @[ladenWeight]</p>
-          </div>
-          <p class="center" style="font-size: 19px; margin-top: 90px;">**This card is digital card signature is not applicable here**</p>
-          <div style="position: absolute; bottom: 85px; right: 20px;">
-            <img src="Images/qrcode.png" width="140px" alt="">
-          </div>
+          </p>
           <img
             src="Images/border-bottom.png"
-            style="width: 100%; position: absolute; bottom: 0px"
-            alt=""/>
+            style="width: 100%; position: absolute; bottom: 0px; left: 0px; right: 0px;"
+            alt=""
+          />
+        </div>
+        <div class="spacer-column" style="margin: 30px 0px;"></div>
+        <div class="card-back" style="position: relative; padding: 0px 0px 0px 0px;border: 1px solid gray;">
+          <p class="center" style="margin: 20px 0px 10px;">
+            <span style="font-size: 10px"> @[registrationNumber] </span>
+            <br />
+            @[ownerType]
+          </p>
+          <div class="body-txt" style="margin-left: 40px">
+            <p style="margin: 9px 0px">Chassis No: @[chassisNumber]</p>
+            <p style="margin: 9px 0px">Engine No: @[engineNumber]</p>
+            <p style="margin: 9px 0px">Make & Model: @[manufacturerName / modelName]</p>
+            <p style="margin: 9px 0px">Year of Manufacture: @[manufacturingYear]</p>
+            <p style="margin: 9px 0px">Engine Capacity: @[engineCapacity]</p>
+            <p style="margin: 9px 0px">Colour: @[color]</p>
+            <p style="margin: 9px 0px">Seating Capacity: @[numberOfSeats]</p>
+            <p style="margin: 9px 0px">Regd. Laden Weight: @[ladenWeight]</p>
+          </div>
+          <div style="position: absolute; bottom: 0px; left: 0px; right: 0px;">
+            <div style="display: flex; justify-content: space-between; align-items: end;">
+              <p class="center" style="font-size: 10px; margin: 0; margin-left: 40px;">
+                **This card is digital card signature is not applicable here**
+              </p>
+              <img src="Images/qrcode.png" width="50px" style="margin-right: 20px;" alt="" />
+            </div>
+            <img
+              src="Images/border-bottom.png"
+              style="width: 100%; margin-top: 20px;"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

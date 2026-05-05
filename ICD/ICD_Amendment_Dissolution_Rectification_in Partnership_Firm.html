@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="SHCC-stylesheet.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 98%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .form-container {
+        width: 100%;
+        margin: auto;
+      }
+
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 14px;
+      }
+
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .header > img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .header > h1 {
+        margin: 0px;
+      }
+
+      .header > h1 > span {
+        font-size: 14px;
+        margin-top: 5px;
+        display: block;
+      }
+
+      .header > h2 {
+        text-decoration: underline;
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+
+      .form-inner-cell {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: 150px;
+        font-weight: 700;
+      }
+
+      .form-line-middle {
+        border-bottom: 1px solid black;
+        width: 300px;
+        font-weight: 700;
+      }
+
+      .form-line-long {
+        flex: 1;
+        border-bottom: 1px solid black;
+        width: 90%;
+        font-weight: 700;
+      }
+
+      .form-label {
+        width: max-content;
+      }
+
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .form-row2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 20px;
+      }
+
+      .row {
+        border: 1px solid black;
+        padding: 7px 5px;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+      }
+
+      .dotted {
+        width: 200px;
+        border-bottom: 2px dotted black;
+        display: inline-block;
+      }
+      .form-p-row {
+        padding-bottom: 7px;
+      }
+      strong {
+        font-weight: 600;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          class=""
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <div class="header">
+            <img src="@[assetImgPath]/images/SHCCIcon1.png" alt="logo" />
+            <h1
+              style="
+                font-family: Olde English, sans-serif;
+                font-size: 55px;
+                font-weight: 400;
+              "
+            >
+              Sindh Healthcare Commission
+              <span style="font-weight: normal; font-size: 20px"
+                >Quality Care For All</span
+              >
+            </h1>
+            <h2 style="font-weight: 600; padding-bottom: 10px">
+              REGISTRATION CERTIFICATE
+            </h2>
+          </div>
+          <div>
+            <div class="form-container">
+              <div class="form-row form-p-row">
+                <div class="form-inner-cell">
+                  <div class="form-label"><strong>No</strong>.</div>
+                  <span class="form-line-short" style="width: 200px"
+                    >@[certificateNumber]</span
+                  >
+                </div>
+                <div class="form-inner-cell">
+                  <div class="form-label"><strong>Date</strong>.</div>
+                  <span class="form-line-short">@[certificateDate]</span>
+                </div>
+              </div>
+              <div class="form-row form-p-row">
+                <div class="form-inner-cell" style="width: 100%">
+                  <div class="form-label">
+                    <strong>This is certified that:</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row form-p-row">
+                <div class="form-inner-cell" style="width: 100%">
+                  <div class="form-label">Name:</div>
+                  <span class="form-line-short" style="border-bottom: 0px"
+                    >@[HCE-Name]</span
+                  >
+                </div>
+              </div>
+              <div class="form-row form-p-row">
+                <div class="form-inner-cell" style="width: 100%">
+                  <div class="form-label">Level of Healthcare:</div>
+                  <span class="form-line-middle">@[Level of Healthcare]</span>
+                </div>
+              </div>
+              <div class="form-row form-p-row">
+                <div class="form-inner-cell" style="width: 100%">
+                  <div class="form-label">
+                    Type of Healthcare Establishment :
+                  </div>
+                  <span class="form-line-middle"
+                    >@[Type of Health care establishment]</span
+                  >
+                </div>
+              </div>
+              <div class="form-row2">
+                <div class="form-inner-cell">
+                  <div class="form-label">Category.</div>
+                  <span class="form-line-short" style="width: 500px"
+                    >@[Category]</span
+                  >
+                </div>
+              </div>
+              <div class="form-row2">
+                <div class="form-inner-cell">
+                  <div class="form-label">Type of Ownership :</div>
+                  <span class="form-line-middle">@[Government/ Others]</span>
+                </div>
+              </div>
+              <div class="form-row form-p-row">
+                <p style="margin: 0">
+                  Having outdoor facilities with
+                  <span>@[Number of Beds]</span> bed and situated at
+                  <span class="dotted" style="font-weight: 600"
+                    >@[Mailing Address]</span
+                  >
+                </p>
+              </div>
+              <div class="form-row" style="padding-top: 10px">
+                <p
+                  style="
+                    text-align: justify;
+                    word-spacing: 5px;
+                    margin-bottom: 5px;
+                  "
+                >
+                  Is hereby awarded “Registration Certificate” as Healthcare
+                  Establishment by the Sindh Healthcare Commission under Section
+                  13 of the Sindh Healthcare Commission Act-2013.
+                </p>
+              </div>
+              <div class="form-row form-p-row">
+                <p style="margin: 0">
+                  The Certificate will remain valid till completing codal
+                  formalities for obtaining License under the Act.
+                </p>
+              </div>
+
+              <div
+                class="form-row form-p-row"
+                style="
+                  justify-content: space-between;
+                  margin-top: 130px;
+                  align-items: flex-end;
+                "
+              >
+                <div class="form-row form-p-row">
+                  <div
+                    class="form-inner-cell"
+                    style="flex-direction: column; align-items: start"
+                  >
+                    <span class="form-line-middle"></span>
+                    <div class="form-label">
+                      Director Licensing & Accreditation :
+                    </div>
+                  </div>
+                </div>
+                <div class="form-inner-cell">
+                  <img
+                    src="@[qrImagePath]"
+                    alt="qr code"
+                    style="width: 100px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="@[signatureImgPath]"
+        alt=""
+        width="250px"
+        style="position: absolute; bottom: 70px"
+      />
+    </div>
+  </body>
+</html>
