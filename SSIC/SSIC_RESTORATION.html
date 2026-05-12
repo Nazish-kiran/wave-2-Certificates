@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 14px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      table {
+        width: 90%;
+        border-collapse: collapse;
+        border: 1px solid #000;
+        margin: 0 auto;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+
+      th {
+        text-align: left;
+        font-weight: bold;
+      }
+
+      .center {
+        text-align: center;
+        width: 60px;
+      }
+
+      .line {
+        display: inline-block;
+        border-bottom: 1px dotted #000;
+        width: 180px;
+        height: 14px;
+        vertical-align: middle;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <div class="header">
+            <img
+              src="@[assetImgPath]/images/SSIC_Logo.png"
+              alt="logo"
+              style="width: 100px"
+            />
+            <h1
+              style="font-size: 18px; font-weight: 600; margin: 0px; flex: 1"
+              class="center"
+            >
+              Sindh Small Industries Corporation<br />
+              (Govt. of Sindh)
+            </h1>
+            <img
+              src="@[assetImgPath]/images/sindh_logo.png"
+              alt="logo"
+              style="width: 100px"
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-top: 30px;
+            "
+          >
+            <p style="margin: 10px 0px 20px">
+              To,<br />
+              Mr.
+              <span class="form-line-short">@[First Name] @[Last Name]</span>
+              <br />
+              Proprietor of M/s
+              <span class="form-line-short">@[Proprietor of M/s]</span>, <br />
+              Plot No: <span class="form-line-short">@[Plot No]</span> measuring
+              <span class="form-line-short">@[Plot Size]</span> sq: ft:, <br />
+              @ Small Industries Estate
+              <span class="form-line-short">@[Plot of Estate]</span>.
+            </p>
+            <p style="margin: 10px 0px 20px">
+              NO: SSIC/SIE/<span class="form-line-short">@[SSIC/SIE]</span>/
+              <br />
+              Dated:- <span class="form-line-short">@[CurrentDate]</span>.
+            </p>
+          </div>
+          <div style="display: flex; gap: 20px">
+            <p>Subject:-</p>
+            <p style="font-weight: 600; text-decoration: underline">
+              CONDITIONAL RESTORATION OF INDUSTRIAL PLOT NO:
+              <span class="form-line-short">@[Plot No]</span> MEASURING
+              <span class="form-line-short">@[Plot Size]</span> SQ: FT: IN small
+              industrial estate
+              <span class="form-line-short">@[Plot of Estate]</span>.
+            </p>
+          </div>
+          <p style="text-indent: 100px; margin-top: 30px">
+            In continuation of the Joint Director SSIC, Larkano Region Larkano
+            vide letter No:
+            <span class="form-line-short">@[Letter No]</span> dated:
+            <span class="form-line-short">@[CurrentDate]</span> on the subject
+            narrated above (copy attached).
+          </p>
+          <p style="text-indent: 100px; margin-top: 30px">
+            It is to inform you that complete the all legal/codal formalities
+            and clear outstanding dues up-to
+            <span class="form-line-short"
+              >@[Legal/codal formalities and clear outstanding dues up-to]</span
+            >, furthermore in case of failure the plot will be cancelled, in
+            case the party will not operating the unit within a period of six
+            (6) months from the date of Restoration. You are also advised that
+            the said plot No:
+            <span class="form-line-short">@[Plot No]</span> measuring
+            <span class="form-line-short">@[Plot Size]</span> SQ: Ft: in Small
+            Industries Estate Larkano “Not Sale-out/Transfer to any person
+            before operation/completion of the Factory Building as per approved
+            building plan with the same nature” , whereas the as per competent
+            authority desired that obtained the such undertaking from Mr.
+            <span class="form-line-short">@[First Name] @[Last Name]</span> S/o
+            <span class="form-line-short">@[Father Name]</span> on stamp paper
+            of Rs. 500/= dully attested from the oath commissioner Larkano.
+          </p>
+          <p style="text-indent: 100px; margin-top: 30px">
+            In this regard, you are once again requested to kindly go through
+            the content of th enclosed letter to do the needful for further
+            process.
+          </p>
+          <div
+            style="display: flex; justify-content: flex-end; margin-top: 100px"
+          >
+            <div
+              style="display: flex; align-items: center; flex-direction: column"
+            >
+              <p style="font-weight: 600; margin-top: 4px">
+                <img
+                  src="@[signatureImgPath]"
+                  style="width: 125px"
+                  alt=""
+                /><br />
+                DISTRICT/ESTATE OFFICER<br />
+                SSIC, S.I.E <span class="form-line-short">@[SSIC/SIE]</span>
+              </p>
+            </div>
+          </div>
+          <p style="margin: 20px 0px 0px">
+            c.c to:- <br />
+            1. The Joint Director, SSIC
+            <span class="form-line-short">@[Joint Director SSIC]</span> Region
+            <span class="form-line-short">@[Region]</span>.<br />
+            2. The Director (E&I) SSIC head office Karachi.<br />
+            3. P.S to Managing Director SSIC Head office Karachi.<br />
+            4. P.S to Deputy Managing Director SSIC head office Karachi
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

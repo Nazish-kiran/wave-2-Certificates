@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 14px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      table {
+        width: 90%;
+        border-collapse: collapse;
+        border: 1px solid #000;
+        margin: 0 auto;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+
+      th {
+        text-align: left;
+        font-weight: bold;
+      }
+
+      .center {
+        text-align: center;
+        width: 60px;
+      }
+
+      .line {
+        display: inline-block;
+        border-bottom: 1px dotted #000;
+        width: 180px;
+        height: 14px;
+        vertical-align: middle;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <div class="header">
+            <img
+              src="@[assetImgPath]/images/SSIC_Logo.png"
+              alt="logo"
+              style="width: 100px"
+            />
+            <h1
+              style="font-size: 18px; font-weight: 600; margin: 0px; flex: 1"
+              class="center"
+            >
+              Sindh Small Industries Corporation<br />
+              (Govt. of Sindh)
+            </h1>
+            <img
+              src="@[assetImgPath]/sindh_logo.png"
+              alt="logo"
+              style="width: 100px"
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-top: 30px;
+            "
+          >
+            <p style="margin: 10px 0px 20px">
+              No.SSIC/SSIE/NBP/IP-<span class="form-line-short"
+                >@[SSIC/SSIE/NBP/IP]</span
+              >/2026
+            </p>
+            <p style="margin: 10px 0px 20px">
+              Dated:- <span class="form-line-short">@[CurrentDate]</span>.
+            </p>
+          </div>
+          <p>
+            Mr. <span class="form-line-short">@[Name of Legal Heirship]</span
+            ><br />
+            CNIC No.<span class="form-line-short"
+              >@[CNIC No of Legal Heirship]</span
+            ><br />
+            All Resident of House No.<span class="form-line-short"
+              >@[House No of Legal Heirship]</span
+            >
+          </p>
+          <div style="display: flex; gap: 20px">
+            <p>Subject:-</p>
+            <p style="font-weight: 600; text-decoration: underline">
+              CHANGE OF OWNERSHIP/FOTI KHATA IN RESPECT OF PLOT NO.<span
+                class="form-line-short"
+                >@[Plot No]</span
+              >
+              MEASURING <span class="form-line-short">@[Plot Size]</span> SQ.YDS
+              SMALL INDUSTRIAL ESTATE/INDUSTRIAL PARK.
+            </p>
+          </div>
+          <p style="text-indent: 100px; margin-top: 30px">
+            This is with reference to your application dated
+            <span class="form-line-short">&nbsp;</span> in respect of plot
+            No.<span class="form-line-short">@[Plot No]</span> SIE-IP
+            <span class="form-line-short">@[SIE/IP]</span>.
+          </p>
+          <p style="text-indent: 100px; margin-top: 30px">
+            Aapproval is hereby conveyed for the change of ownership/foti khata
+            in respect of plot No.<span class="form-line-short"
+              >@[Plot No]</span
+            >
+            measuring <span class="form-line-short">@[Plot Size]</span> Sq.YDs
+            in SIE-IP <span class="form-line-short">@[SIE/IP]</span>, from the
+            name of deceased allotee Mr.<span class="form-line-short"
+              >@[First Name] @[Last Name]</span
+            >
+            son of <span class="form-line-short">@[Father Name]</span> in your
+            names for the unit of M/s.<span class="form-line-short"
+              >@[First Name] @[Last Name]</span
+            >
+            in SIE-IP <span class="form-line-short">@[SIE/IP]</span>.
+          </p>
+          <p style="text-indent: 100px; margin-top: 30px">
+            However, remaining allotment order terms and conditions will remain
+            same/unchanged.
+          </p>
+          <div
+            style="display: flex; justify-content: flex-end; margin-top: 100px"
+          >
+            <div
+              style="display: flex; align-items: center; flex-direction: column"
+            >
+              <p style="font-weight: 600; margin-top: 4px">
+                <img
+                  src="@[signatureImgPath]"
+                  style="width: 125px"
+                  alt=""
+                /><br />
+                ESTATE OFFICER (SSIE)<br />
+                SIE/IP <span class="form-line-short">@[SIE/IP]</span>
+              </p>
+            </div>
+          </div>
+          <p style="margin: 20px 0px 0px">
+            Copy to:- <br />
+            1. The Joint Director, SSIC Regional Office
+            <span class="form-line-short">@[Joint Director SSIC]</span>
+            w.r.to his letter dated
+            <span class="form-line-short">@[Letter Date]</span>.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

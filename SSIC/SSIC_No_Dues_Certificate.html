@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 14px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"/>
+        <div
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px">
+          <div class="header">
+            <img
+              src="@[assetImgPath]/images/SSIC_Logo.png"
+              alt="logo"
+              style="width: 100px"/>
+            <h1
+              style="font-size: 18px; font-weight: 600; margin: 0px; flex: 1;"
+              class="center">
+              Sindh Small Industries Corporation<br/>
+              (Govt. of Sindh)
+            </h1>
+            <img
+              src="@[assetImgPath]/images/sindh_logo.png"
+              alt="logo"
+              style="width: 100px"/>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+            <p style="margin: 10px 0px 20px;">No:SSIC/RO-<span class="form-line-short">@[SSIC/RO]</span>/SIE-IP-@[SIE/IP]/2026/ <span class="form-line-short">&nbsp;</span> </p>
+            <p style="margin: 10px 0px 20px;">Dated <span class="form-line-short">@[CurrentDate]</span> </p>
+          </div>
+          <p class="center" style="margin-top: 50px; font-size: 16px; font-weight: 600;">
+            NO DUES CERTIFICATE
+          </p>
+          <p style="text-indent: 100px; margin-top: 30px">
+            It is certified that nothing is outstanding against Plot No. <span class="form-line-short">@[Plot No]</span> measuring <span class="form-line-short">@[Plot Size]</span> Sq.Yds in SIE/IP <span class="form-line-short">@[SIE/IP]</span> allotted to Mr. <span class="form-line-short">@[First Name] @[Last Name]</span> up-to 30.06.2026.
+          </p>
+          <div style="display: flex; justify-content: flex-end; margin-top: 200px;">
+            <div
+              style="display: flex; align-items: center; flex-direction: column"
+            >
+              <p class="center" style="font-weight: 600; margin-top: 4px">
+                <img src="@[signatureImgPath]" style="width: 125px" alt="" /><br/>
+                (Estate Officer/AD E&I)<br/>
+SIE-IP <span class="form-line-short">@[SIE-IP]</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

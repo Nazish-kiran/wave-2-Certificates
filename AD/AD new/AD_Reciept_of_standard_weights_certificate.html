@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        background-image: url(@[assetImgPath]/images/border-land.png);
+        position: absolute;
+        width: 99%;
+        height: 99%;
+        min-height: 690px;
+        background-size: 100%;
+        overflow: hidden;
+      }
+      .background-img {
+        position: absolute;
+        height: 32rem;
+        top: 17%;
+        left: 28%;
+        z-index: -1;
+      }
+
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label,
+      td,
+      th {
+        font-size: 17px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+        font-size: inherit;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table td,
+      table th {
+        padding: 5px;
+        line-height: 17px;
+        text-align: center;
+      }
+      th {
+        font-weight: normal;
+      }
+      @page {
+        size: a4 landscape;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          style="padding-top: 0px; padding-inline: 20px; padding-bottom: 0px"
+        >
+          <div style="margin-inline: 20px">
+            <div class="header">
+              <h1
+                style="
+                  font-size: 22px;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  margin-top: 5px;
+                  margin-bottom: 0px;
+                "
+                class="center"
+              >
+                The sindh standard weights & Measures Enforcement Rules, 1979.
+                <br />
+                Verification Certificate No.
+                <span class="form-line-short">@[Certificate No]</span> Date
+                <span class="form-line-short">@[Date]</span>
+              </h1>
+              <p style="margin-top: 5px; margin-bottom: 0px">
+                Receipt No
+                <span class="form-line-short">@[Receipt No]</span> Date
+                <span class="form-line-short">@[Date]</span>
+              </p>
+            </div>
+            <div>
+              <p class="center" style="margin-top: 5px; margin-bottom: 5px">
+                Name of inspector
+                <span class="form-line-short">@[Name of inspector] </span>No
+                <span class="form-line-short">@[No]</span>
+              </p>
+              <p style="text-indent: 30px; margin-block: 0px">
+                I here by certify that I have this day verified stamped rejected
+                the undermentioned weights measures, Weighing or measuring
+                instruments belonging to (name, address and trade)
+                <span class="form-line-short">@[Name] @[Address] @[Trade]</span>
+              </p>
+              <h1
+                style="
+                  font-size: 22px;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                "
+                class="center"
+              >
+                Under the sindh standard weights & measures enforcement act,
+                1975.
+              </h1>
+            </div>
+          </div>
+          <table border="1">
+            <tr>
+              <td colspan="11" style="text-align: left; padding-left: 30px">
+                Trader’s No.
+                <span class="form-line-short">@[Trader's No]</span> under the
+                above rules
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">Quantity</th>
+              <th colspan="2">
+                DENOMINATION <br />
+                WEIGHTS <br />
+                MEASURE
+              </th>
+              <th colspan="3">WEIGHING INSTRUMENTS</th>
+              <th rowspan="2">
+                Measuring <br />
+                Instruments
+              </th>
+              <th colspan="2">
+                Verification <br />
+                Fee
+              </th>
+              <th colspan="2">
+                Carriage <br />
+                Conveyance <br />
+                Charges, etc.
+              </th>
+            </tr>
+
+            <tr>
+              <th style="width: 10%">Weights</th>
+              <th style="width: 10%">Measures</th>
+              <th style="width: 10%">Capacity</th>
+              <th style="width: 10%">Class</th>
+              <th style="width: 10%">Maker</th>
+              <th style="width: 7%">&nbsp;</th>
+              <th style="width: 7%">Ps.</th>
+              <th style="width: 7%">Rs.</th>
+              <th style="width: 7%">Ps.</th>
+            </tr>
+
+            <!-- data rows -->
+            <tr>
+              <td>@[Quantity]</td>
+              <td>@[Weights]</td>
+              <td>@[Measures]</td>
+              <td>@[Capacity]</td>
+              <td>@[Class]</td>
+              <td>@[Maker]</td>
+              <td>@[Measuring Instruments]</td>
+              <td>@[Verification Fee]</td>
+              <td>-</td>
+              <td>@[Carriage Conveyance Charges etc.]</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Total Rs.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-transform: uppercase" rowspan="2">
+                Grand <br />
+                Total Rs.
+              </td>
+              <td rowspan="2"></td>
+              <td rowspan="2"></td>
+              <td rowspan="2"></td>
+              <td rowspan="2"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <div
+            style="
+              padding-inline: 20px;
+              display: flex;
+              justify-content: space-between;
+            "
+          >
+            <div style="display: flex; gap: 20px; align-items: center;">
+              <img src="logos/image 1.png" style="width: 70px;" alt="">
+              <div>
+
+                <p>
+                  Repaired by <span class="form-line-short">@[Repaired by]</span>
+                </p>
+                <p>
+                  Next verification is due on
+                  <span class="form-line-short">@[Next verification date]</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <p>Inspector, Weights and Measures</p>
+              <p>
+                Center
+                <span class="form-line-short"
+                  >@[Inspector Weights and Measures Center]</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
