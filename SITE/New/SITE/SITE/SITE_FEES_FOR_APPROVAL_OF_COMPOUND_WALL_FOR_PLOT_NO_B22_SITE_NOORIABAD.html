@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 16px;
+      }
+      p {
+        line-height: 20px;
+      }
+      ul li {
+        text-align: justify;
+      }
+      ul {
+        padding-left: 19px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <div class="header">
+            <img
+              src="@[assetImgPath]/images/sindh_logo.png"
+              alt="logo"
+              style="width: 100px"
+            />
+          </div>
+          <p style="margin: 0px">
+            <b
+              >M/s. <span class="form-line-short">&nbsp;</span> <br />
+              Plot No. <span class="form-line-short">&nbsp;</span>
+            </b>
+          </p>
+          <p style="font-weight: 600">
+            Subject: - FEES FOR APPROVAL OF COMPOUND WALL FOR PLOT NO. B/22,
+            S.I.T.E. NOORIABAD.
+          </p>
+          <p style="margin-bottom: 0px;">Dear Sir,</p>
+          <p style="text-align: justify; margin-bottom: 0px;margin-top: 9px;">
+            1. Approval fees of Compound Plan. Rs.
+            <span class="form-line-short">&nbsp;</span>/=
+          </p>
+          <p style="text-indent: 40px; text-align: justify; line-height: 32px;margin-top: 9px;">
+            The pay order may please be sent along with a covering letter in
+            favor of SITE Ltd, Karachi, to the undersigned immediately, so the
+            Drawings may be disposed off without delay. In case the pay order is
+            not received within a fortnight from the date of receipt of this
+            letter the Drawings will be returned to you without approval.
+          </p>
+          <div style="position: absolute; bottom: 30px; width: 88%; left: 42px">
+            <div style="display: flex; justify-content: flex-end">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <img src="@[signatureImgPath]" style="width: 140px" alt="" />
+                <p
+                  class="center"
+                  style="font-weight: 600; margin-bottom: 200px;margin-top: 0px;"
+                >
+                  ESTATE ENGINEER <br />
+                  SITE Nooriabad
+                </p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+              "
+            >
+              <p style="margin: 0px; line-height: 32px;">
+                Copy to: - <br />
+                1. The Secretary, SITE Ltd, Karachi. <br />
+                2. P.A to Chief Engineer, SITE Ltd, Karachi. <br />
+                3. The Director Finance, SITE Ltd, Karachi. <br />
+              </p>
+              <img src="@[qrImagePath]" width="80px" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

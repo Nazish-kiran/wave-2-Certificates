@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 16px;
+      }
+      p {
+        line-height: 20px;
+      }
+      ul li {
+        text-align: justify;
+      }
+      ul {
+        padding-left: 19px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <div class="header">
+            <img
+              src="@[assetImgPath]/images/sindh_logo.png"
+              alt="logo"
+              style="width: 100px"
+            />
+          </div>
+          <p style="margin: 0px">
+            <b
+              >M/s. <span class="form-line-short">&nbsp;</span> <br />
+              Plot No. <span class="form-line-short">&nbsp;</span>
+            </b>
+          </p>
+          <div style="display: flex; gap: 20px">
+            <p>Subject:-</p>
+            <p style="font-weight: 600">
+              APPROVAL OF PROPOSED COMPOUND WALLDRAWING OF PLOT NO. B/22, M/S.
+              NASEEM EXPORT (PVT) LTD AT SITE NOORIABAD.
+            </p>
+          </div>
+          <p style="margin-bottom: 0px">Dear Sir,</p>
+          <p
+            style="
+              text-align: justify;
+              margin-top: 9px;
+              line-height: 31px;
+              text-indent: 20px;
+            "
+          >
+            We return herewith the 2 (Two) sets of Proposed Compound wall
+            drawing in respect of the above plot duly approved by us. Permission
+            for undertaking the proposed construction as per these Drawings is
+            also hereby granted. Please note that the responsibility for
+            structural stability of the building is entirely that of your
+            Architect and that he is also required to supervise the proposed
+            building during the course of the construction. It is further
+            advised to install Effluent Treatment Plant in your premises as per
+            requirement & discharge Effluent as per NEO’s of SEPA, and to submit
+            completion certificate together with Block Plans, to this office
+            thereafter.
+          </p>
+          <p style="text-align: justify; margin-bottom: 0px; line-height: 25px">
+            <b>NOTE:</b>
+            Please note that the proposed building drawings for factory compound
+            wall are required to be signed by Inspector of Factories, Labour
+            Department Government of Sindh. In order to facilitate you to start
+            the construction immediately, drawings are approved subject to
+            condition that the drawings will be sent to labor department and if
+            any input is received from labor department you will submit the
+            revised drawings to incorporate the input accordingly.
+          </p>
+          <div style="position: absolute; bottom: 30px; width: 88%; left: 42px">
+            <div style="display: flex; justify-content: flex-end">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <img src="@[signatureImgPath]" style="width: 140px" alt="" />
+                <p
+                  class="center"
+                  style="font-weight: 600; margin: 0px"
+                >
+                  ESTATE ENGINEER <br />
+                  SITE Nooriabad
+                </p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+              "
+            >
+              <div>
+                <div style="display: flex; gap: 5px;">
+                  <p style="margin-top: 0px;">Encl:</p>
+                  <p style="margin-top: 0px;">
+                    <span style="text-decoration: underline">
+                      Two Sets Of Approved
+                      <br />
+                      Compound Wall Drawings.
+                    </span>
+                  </p>
+                </div>
+
+                <p style="margin: 0px; line-height: 31px">
+                  Copy to: - <br />
+                  1. The Secretary, SITE Ltd. Karachi. <br />
+                  2. P.A to Chief Engineer, SITE Ltd. Karachi. <br />
+                  3. The Architect. <br />
+                  4. The Drawing Branch, SITE Ltd. Nooriabad.
+                </p>
+              </div>
+              <img src="@[qrImagePath]" width="80px" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

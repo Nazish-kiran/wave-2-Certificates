@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 14px;
+      }
+      ul li {
+        text-align: justify;
+      }
+      ul {
+        padding-left: 19px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+      }
+
+      .disclaimer {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+      }
+
+      .section-text {
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #999;
+      }
+
+      th,
+      td {
+        padding: 14px;
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .table-title {
+        text-align: center;
+        font-weight: bold;
+        background: #f3f3f3;
+        font-size: 18px;
+      }
+
+      .label {
+        width: 35%;
+        font-weight: 500;
+      }
+
+      .value {
+        width: 65%;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div
+          style="padding-top: 50px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <h2>ANNEXURE-C</h2>
+          <p>@[ChallanNo]</p>
+
+          <div class="disclaimer">
+            <strong>Disclaimer:</strong><br /><br />
+
+            In case the applicant intends to obtain true copy on White Paper
+            (Digital Copy), the generated challan must be paid either online or
+            manually. In case of manual payment, a copy/image of the paid
+            challan shall be uploaded for further processing of the application.
+            <br /><br />
+
+            In case the applicant intends to obtain a True Copy on Green Paper
+            (Physical Paper), the applicant shall be required to visit the
+            concerned Service Center for payment of the prescribed fee and
+            further processing of the request.
+          </div>
+
+          <div class="section-text">
+            <div>PEOPLES SERVICE CENTRE</div>
+            <div>DISTRICT MALIR</div>
+            <div>BOARD OF REVENUE SINDH</div>
+          </div>
+
+          <table>
+            <tr>
+              <th colspan="2" class="table-title">FEE RECEIPT</th>
+            </tr>
+
+            <tr>
+              <td class="label">Date</td>
+              <td class="value">@[certificateDate]</td>
+            </tr>
+
+            <tr>
+              <td class="label">Name of Customer</td>
+              <td class="value">@[First Name] @[Last Name]</td>
+            </tr>
+
+            <tr>
+              <td class="label">Customer CNIC#</td>
+              <td class="value">@[CNIC]</td>
+            </tr>
+
+            <tr>
+              <td class="label">Customer contact#</td>
+              <td class="value">@[Mobile Number]</td>
+            </tr>
+
+            <tr>
+              <td class="label">Fee Amount</td>
+              <td class="value">
+                @[PayableAmountInNumber]</td>
+            </tr>
+
+            <tr>
+              <td class="label">Fee in Lieu of</td>
+              <td class="value">True Copy</td>
+            </tr>
+
+            <tr>
+              <td class="label">Signature</td>
+              <td class="value">
+
+                 <img src="@[signatureImgPath]" width="140px" alt="">
+
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

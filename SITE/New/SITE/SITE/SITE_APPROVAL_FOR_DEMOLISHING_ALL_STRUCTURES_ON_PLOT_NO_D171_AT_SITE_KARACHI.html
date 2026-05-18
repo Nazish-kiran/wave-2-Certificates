@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 16px;
+      }
+      p {
+        line-height: 20px;
+      }
+      ul li {
+        text-align: justify;
+      }
+      ul {
+        padding-left: 19px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <div class="header">
+            <img src="@[assetImgPath]/images/sindh_logo.png" alt="logo" style="width: 100px" />
+          </div>
+          <p style="margin: 0px">
+            <b
+              >M/s. <span class="form-line-short">&nbsp;</span> <br />
+              Plot No. <span class="form-line-short">&nbsp;</span>
+            </b>
+          </p>
+          <div style="display: flex; gap: 20px">
+            <p>Subject:-</p>
+            <p style="font-weight: 600">
+              APPROVAL FOR DEMOLISHING ALL STRUCTURES ON PLOT NO. D/171, AT SITE
+              KARACHI.
+            </p>
+          </div>
+          <p style="text-align: justify; margin-bottom: 0px; margin-top: 9px; line-height: 32px; text-indent: 20px;">
+            With reference to your letter dated: 0-01-2021 stated that structure
+            are very old and in bed condition so require to demolish. <br />
+            2. In view of the above the permission of demolition of structures
+            of Plot No. D/171 is hereby accorded. The demolition will be solely
+            at your own risk and cost and you will take all necessary measures
+            during demolition work to avoid any untoward incident. <br />
+            3. You will also be required to submit the Drawings for
+            reconstruction of Plot No. D/171 for approval before start
+            reconstruction.
+          </p>
+          <div style="position: absolute; bottom: 30px; width: 88%; left: 42px">
+            <div style="display: flex; justify-content: flex-end">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <img src="@[signatureImgPath]" style="width: 140px" alt="" />
+                <p
+                  class="center"
+                  style="font-weight: 600; margin-bottom: 200px;margin-top: 0px;"
+                >
+                  Chief Engineer
+                </p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+              "
+            >
+              <p style="margin: 0px; line-height: 32px">
+                Copy to: - <br />
+                1. The Estate Engineer (D/F), SITE Limited Karachi <br />
+                2. PS to Managing Director, SITE Ltd Karachi <br />
+              </p>
+              <img src="@[qrImagePath]" width="80px" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

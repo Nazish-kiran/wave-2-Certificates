@@ -15,11 +15,14 @@
         background-size: 100%;
         overflow: hidden;
       }
+      .content {
+        position: relative;
+      }
       .background-img {
         position: absolute;
-        height: 32rem;
+        height: 400px;
         top: 17%;
-        left: 28%;
+        left: 34%;
         z-index: -1;
       }
 
@@ -33,7 +36,7 @@
       .form-label,
       td,
       th {
-        font-size: 17px;
+        font-size: 16px;
       }
       .header {
         width: 100%;
@@ -274,9 +277,9 @@
                 Grand <br />
                 Total Rs.
               </td>
+              <td rowspan="2">@[PayableAmountInNumber]</td>
               <td rowspan="2"></td>
-              <td rowspan="2"></td>
-              <td rowspan="2"></td>
+              <td rowspan="2">@[PayableAmountInNumber]</td>
               <td rowspan="2"></td>
             </tr>
             <tr>
@@ -295,12 +298,12 @@
               justify-content: space-between;
             "
           >
-            <div style="display: flex; gap: 20px; align-items: center;">
-              <img src="logos/image 1.png" style="width: 70px;" alt="">
+            <div style="display: flex; gap: 20px; align-items: center">
+              <img src="@[qrImagePath]" style="width: 70px" alt="" />
               <div>
-
                 <p>
-                  Repaired by <span class="form-line-short">@[Repaired by]</span>
+                  Repaired by
+                  <span class="form-line-short">@[Repaired by]</span>
                 </p>
                 <p>
                   Next verification is due on
@@ -313,7 +316,8 @@
               <p>
                 Center
                 <span class="form-line-short"
-                  >@[Inspector Weights and Measures Center]</span>
+                  >@[Inspector Weights and Measures Center]</span
+                >
               </p>
             </div>
           </div>

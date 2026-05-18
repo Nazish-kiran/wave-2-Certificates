@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        position: absolute;
+        background-image: url(@[assetImgPath]/images/border.png);
+        width: 99%;
+        height: 99%;
+        min-height: 900px;
+        background-size: cover;
+        left: 5px;
+      }
+      .background-img {
+        position: absolute;
+        height: 45rem;
+        top: 15%;
+        left: 10%;
+      }
+
+      .center {
+        text-align: center;
+      }
+      p,
+      span,
+      li,
+      strong,
+      .form-label {
+        font-size: 16px;
+      }
+      p {
+        line-height: 20px;
+      }
+      ul li {
+        text-align: justify;
+      }
+      ul {
+        padding-left: 19px;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .form-line-short {
+        border-bottom: 1px solid black;
+        width: auto;
+        display: inline;
+      }
+      @page {
+        size: a4;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="@[assetImgPath]/images/Coat_of_arms_of_Sindh_Province.svg 1.png"
+          alt="watermark"
+          class="background-img"
+        />
+        <div
+          style="padding-top: 40px; padding-inline: 45px; padding-bottom: 0px"
+        >
+          <div class="header">
+            <img
+              src="@[assetImgPath]/images/sindh_logo.png"
+              alt="logo"
+              style="width: 100px"
+            />
+          </div>
+          <p style="margin: 0px">
+            <b
+              >M/s. <span class="form-line-short">&nbsp;</span> <br />
+              Plot No. <span class="form-line-short">&nbsp;</span> <br />
+              Hyderabad
+            </b>
+          </p>
+          <p style="font-weight: 600">
+            Subject: - FEES FOR APPROVAL OF BUILDING DRAWING (COMMERCIAL) OF
+            PLOT NO. A/10-Z-9, S.I.T.E. AREA, HYDERABAD.AD.
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              padding-inline: 60px;
+              align-items: center;
+            "
+          >
+            <p class="center" style="line-height: 31px">
+              Please send us a pay order for <br />On account of Approval Fee
+              <br />
+              (34100.00 SFT)
+            </p>
+            <p>Rs. <span class="form-line-short">&nbsp;</span>/=</p>
+          </div>
+          <p style="text-indent: 50px; text-align: justify; line-height: 31px; margin-top: 30px;">
+            The pay order may please be sent along with a covering letter in
+            favour of SITE Ltd, Hyderabad, to the undersigned immediately, so
+            the Drawings may be disposed off without delay. In case the pay
+            order is not received within a fortnight from the date of receipt of
+            this letter the Drawings will be returned to you without approval.
+          </p>
+          <div style="position: absolute; bottom: 30px; width: 88%; left: 42px">
+            <div style="display: flex; justify-content: flex-end">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <img src="@[signatureImgPath]" style="width: 140px" alt="" />
+                <p
+                  class="center"
+                  style="font-weight: 600; margin-bottom: 200px;margin-top: 0px;"
+                >
+                  I/C ESTATE ENGINEER <br />
+                  SITE Limited Hyderabad
+                </p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+              "
+            >
+              <p style="margin: 0px; line-height: 32px">
+                Copy to: - <br />
+                1. The Account Officer, SITE Ltd, Hyderabad.<br />
+                2. Drawing Branch Hyderabad. <br />
+              </p>
+              <img src="@[qrImagePath]" width="80px" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
